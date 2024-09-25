@@ -1,13 +1,24 @@
-﻿.Warning
-{
+﻿.Shop {
   border: double blue 2px;
   background-color: lightgrey;
-  display: inline-block;
+
+  justify-content: center;
   padding: 50px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+  margin: 20px;
+  text-align: center;
 }
 
-.Warning_Text
-{
+.Shop_Text {
   color: red;
+  font-size: 24px;
+  font-weight: bold; 
+  margin-bottom: 10px;
+}
+
+.Shop_Address {
+  color: black;
   font-size: 20px;
+  margin-top: 0;
 }

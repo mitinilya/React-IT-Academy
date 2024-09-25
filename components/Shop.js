@@ -2,19 +2,21 @@
 
 import './Shop.css';
 
-class Warning extends React.Component {
+class Shop extends React.Component {
 
   render() {
     return (
-      <div className='Warning'>
-        <span className='Warning_Text'>
-          {this.props.name},
-          {this.props.address}
+      <div className='Shop'>
+        <span className='Shop_Text'>
+          {this.props.name}
         </span>
+        <p className = 'Shop_Address'>
+          {this.props.address}
+        </p>
       </div>
     );
   }
 
 }
 
-export default Warning;
+export default Shop;
