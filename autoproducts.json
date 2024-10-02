@@ -1,0 +1,8 @@
+[
+    {"name":"Бампер" , "id":"0" , "price":"100","url_photo":"https://d4.by/image/cache/catalog/d4_img/1726876800/1726901277045_17269012715214340151758143012775-780x572-product_popup.jpg", "count": 3  },
+    {"name":"Фара" , "id":"1" , "price":"50","url_photo":"https://www.autoopt.ru/upload/iblock/d44/fara_1.jpg", "count": 5  },
+    {"name":"Сидение" , "id":"2" , "price":"70","url_photo":"https://images.tomas.by/i3/categories/sidenya-avtomobilnye_f71d5108594ffc6_800x600.jpg", "count": 7  },
+    {"name":"Рулевое колесо" , "id":"3" , "price":"25","url_photo":"https://files.autodemic.ru/images/products/1/6332/795195580/rulevoe-koleso-2107-bez-znaka-analog__1_.jpg", "count": 2  },
+    {"name":"Лобовое стекло" , "id":"4" , "price":"55","url_photo":"https://i.avto.pro/newsimages/logovoe-steklo-s-bmw_1501425880.jpg", "count": 4  }
+
+]
