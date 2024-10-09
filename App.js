@@ -1,5 +1,4 @@
-﻿// App.js
-import React from 'react';
+﻿import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Shop from './components/Shop';

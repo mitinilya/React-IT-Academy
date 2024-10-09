@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   border: solid 1px #ddd;
-  background-color: #f9f9f9;
+  background-color: white;
   padding: 25px;
   margin: 10px 0;
   border-radius: 10px;
@@ -12,6 +12,16 @@
   text-align: center;
 }
 
+.ShopDescriptionTitle.selected {
+  background-color: red; 
+}
+
+.ShopDescriptionTitle_id {
+  font-size: 18px;
+  font-weight: bold; 
+  color: #333;
+  margin-bottom: 1px;
+}
 .ShopDescriptionTitle_name {
   font-size: 18px;
   font-weight: bold; 
@@ -27,15 +37,11 @@
 
 .ShopDescriptionTitle_img img {
   max-width: 100%;
-  position: relative;
   height: 100px;
   width: 100px;
   object-fit: cover;
   border-radius: 5px;
-
 }
-
-
 
 .ShopDescriptionTitle_price {
   font-size: 16px;

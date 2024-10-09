@@ -399,9 +399,17 @@ var _Shop = __webpack_require__(15);
 
 var _Shop2 = _interopRequireDefault(_Shop);
 
+var _autoproducts = __webpack_require__(19);
+
+var _autoproducts2 = _interopRequireDefault(_autoproducts);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(_Shop2.default, { name: '\u041C\u0430\u0433\u0430\u0437\u0438\u043D \u0410\u0432\u0442\u043E\u0442\u043E\u0432\u0430\u0440\u043E\u0432' }), _react2.default.createElement(_Shop2.default, { address: '\u0433. \u041C\u0438\u043D\u0441\u043A, \u0443\u043B. \u041B\u0435\u0440\u043C\u043E\u043D\u0442\u043E\u0432\u0430 \u0434.35' }), document.getElementById('container'));
+_reactDom2.default.render(_react2.default.createElement(_Shop2.default, {
+  name: '\u041C\u0430\u0433\u0430\u0437\u0438\u043D \u0410\u0432\u0442\u043E\u0442\u043E\u0432\u0430\u0440\u043E\u0432',
+  address: '\u0433. \u041C\u0438\u043D\u0441\u043A, \u0443\u043B. \u041B\u0435\u0440\u043C\u043E\u043D\u0442\u043E\u0432\u0430 \u0434.35',
+  title: '\u041D\u0430\u0448 \u0430\u0441\u0441\u043E\u0440\u0442\u0438\u043C\u0435\u043D\u0442',
+  autoproducts: _autoproducts2.default }), document.getElementById('container'));
 
 /***/ }),
 /* 5 */
@@ -30480,6 +30488,10 @@ var _react2 = _interopRequireDefault(_react);
 
 __webpack_require__(16);
 
+var _ShopDescription = __webpack_require__(17);
+
+var _ShopDescription2 = _interopRequireDefault(_ShopDescription);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30488,41 +30500,194 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Warning = function (_React$Component) {
-  _inherits(Warning, _React$Component);
+var Shop = function (_React$Component) {
+  _inherits(Shop, _React$Component);
 
-  function Warning() {
-    _classCallCheck(this, Warning);
+  function Shop() {
+    var _ref;
 
-    return _possibleConstructorReturn(this, (Warning.__proto__ || Object.getPrototypeOf(Warning)).apply(this, arguments));
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, Shop);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Shop.__proto__ || Object.getPrototypeOf(Shop)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      selectProductCode: null,
+      autoproductsDel: _this.props.autoproducts
+    }, _this.selectProduct = function (id) {
+      _this.setState({ selectProductCode: id });
+    }, _this.deleteProduct = function (id) {
+      console.log("SHOOPDEL" + id);
+      var filteredProducts = _this.state.autoproductsDel.filter(function (product) {
+        return product.id !== id;
+      });
+      _this.setState({ autoproductsDel: filteredProducts });
+    }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
-  _createClass(Warning, [{
+  _createClass(Shop, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
+      var autoproductsCode = this.state.autoproductsDel.map(function (v) {
+        return _react2.default.createElement(_ShopDescription2.default, { key: v.id,
+          id: v.id,
+          name: v.name, price: v.price, count: v.count, url_photo: v.url_photo,
+          cbSelectedProduct: _this2.selectProduct,
+          cbSelectedProductColor: _this2.state.selectProductCode == v.id,
+          cbDeleteProduct: _this2.deleteProduct });
+      });
+
       return _react2.default.createElement(
         'div',
-        { className: 'Warning' },
+        { className: 'Shop' },
         _react2.default.createElement(
           'span',
-          { className: 'Warning_Text' },
-          this.props.name,
+          { className: 'Shop_Text' },
+          this.props.name
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'Shop_Address' },
           this.props.address
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'Shop_Title' },
+          this.props.title
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'Autoproducts' },
+          autoproductsCode
         )
       );
     }
   }]);
 
-  return Warning;
+  return Shop;
 }(_react2.default.Component);
 
-exports.default = Warning;
+exports.default = Shop;
 
 /***/ }),
 /* 16 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(18);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ShopDescription = function (_React$Component) {
+  _inherits(ShopDescription, _React$Component);
+
+  function ShopDescription() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, ShopDescription);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ShopDescription.__proto__ || Object.getPrototypeOf(ShopDescription)).call.apply(_ref, [this].concat(args))), _this), _this.productSelected = function () {
+      console.log(_this.props.id);
+      _this.props.cbSelectedProduct(_this.props.id);
+    }, _this.buttonDel = function (event) {
+      event.stopPropagation(); //????
+      console.log(_this.props.id);
+      _this.props.cbDeleteProduct(_this.props.id);
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(ShopDescription, [{
+    key: "render",
+    value: function render() {
+
+      return _react2.default.createElement(
+        "div",
+        { className: "ShopDescriptionTitle " + (this.props.cbSelectedProductColor ? 'selected' : ''), value: this.props.id, onClick: this.productSelected },
+        _react2.default.createElement(
+          "span",
+          { className: "ShopDescriptionTitle_id" },
+          this.props.id,
+          " "
+        ),
+        _react2.default.createElement(
+          "span",
+          { className: "ShopDescriptionTitle_name" },
+          this.props.name
+        ),
+        _react2.default.createElement(
+          "span",
+          { className: "ShopDescriptionTitle_count" },
+          this.props.count,
+          " \u0448\u0442."
+        ),
+        _react2.default.createElement(
+          "span",
+          { className: "ShopDescriptionTitle_img" },
+          _react2.default.createElement("img", { src: this.props.url_photo })
+        ),
+        _react2.default.createElement(
+          "span",
+          { className: "ShopDescriptionTitle_price" },
+          this.props.price,
+          " $"
+        ),
+        _react2.default.createElement("input", {
+          type: "button", value: "\u0423\u0434\u0430\u043B\u0438\u0442\u044C", className: "ButtonDelete", onClick: this.buttonDel })
+      );
+    }
+  }]);
+
+  return ShopDescription;
+}(_react2.default.Component);
+
+exports.default = ShopDescription;
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
+module.exports = [{"name":"Бампер","id":"0","price":"100","url_photo":"https://d4.by/image/cache/catalog/d4_img/1726876800/1726901277045_17269012715214340151758143012775-780x572-product_popup.jpg","count":3},{"name":"Фара","id":"1","price":"50","url_photo":"https://www.autoopt.ru/upload/iblock/d44/fara_1.jpg","count":5},{"name":"Сидение","id":"2","price":"70","url_photo":"https://images.tomas.by/i3/categories/sidenya-avtomobilnye_f71d5108594ffc6_800x600.jpg","count":7},{"name":"Рулевое колесо","id":"3","price":"25","url_photo":"https://files.autodemic.ru/images/products/1/6332/795195580/rulevoe-koleso-2107-bez-znaka-analog__1_.jpg","count":2},{"name":"Лобовое стекло","id":"4","price":"55","url_photo":"https://i.avto.pro/newsimages/logovoe-steklo-s-bmw_1501425880.jpg","count":4}]
 
 /***/ })
 /******/ ]);
