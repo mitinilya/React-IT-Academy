@@ -1,0 +1,55 @@
+.ShopDescriptionTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px #ddd;
+  background-color: white;
+  padding: 25px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  text-align: center;
+}
+
+.ShopDescriptionTitle.selected {
+  background-color: red; 
+}
+
+.ShopDescriptionTitle_id {
+  font-size: 18px;
+  font-weight: bold; 
+  color: #333;
+  margin-bottom: 1px;
+}
+.ShopDescriptionTitle_name {
+  font-size: 18px;
+  font-weight: bold; 
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.ShopDescriptionTitle_count {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.ShopDescriptionTitle_img img {
+  max-width: 100%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ShopDescriptionTitle_price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #009900;
+  margin-top: 5px;
+}
+.ButtonEdit {
+  margin: 5px;
+
+}
