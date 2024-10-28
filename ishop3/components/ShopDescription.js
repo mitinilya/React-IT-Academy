@@ -14,21 +14,21 @@ class ShopDescription extends React.Component {
   }
 
   buttonDel = (event) => {
-    event.stopPropagation();//????
+    event.stopPropagation();
     console.log (this.props.id)
     this.props.cbDeleteProduct (this.props.id)
   }
-  buttonEdit = () => {
 
+  buttonEdit = (event) => {
+    event.stopPropagation();
+    this.props.cbEditProduct (this.props.id)
   }
-  
- 
   render() {
 
     return (
 
         <div className={`ShopDescriptionTitle ${this.props.cbSelectedProductColor ? 'selected' : ''}`} value = {this.props.id} onClick = {this.productSelected}>
-          <span className="ShopDescriptionTitle_id">{this.props.id} </span>
+          <span className="ShopDescriptionTitle_id">{this.props.id}</span>
           <span className="ShopDescriptionTitle_name">{this.props.name}</span>
           <span className="ShopDescriptionTitle_count">{this.props.count} шт.</span>
           <span className="ShopDescriptionTitle_img">
@@ -36,9 +36,9 @@ class ShopDescription extends React.Component {
           </span>
           <span className="ShopDescriptionTitle_price">{this.props.price} $</span>
           <input
-          type = "button" value = "Удалить" className = "ButtonDelete" onClick = {this.buttonDel}>
+          type = "button" value = "Удалить" disabled = {this.props.edit} className = "ButtonDelete" onClick = {this.buttonDel}>
           </input>
-          <input type = "button" value = "Изменить" onClick = {this.buttonEdit} ></input>
+          <input type = "button" value = "Изменить" disabled = {this.props.edit} onClick = {this.buttonEdit} ></input>
   </div>
     );
   }
