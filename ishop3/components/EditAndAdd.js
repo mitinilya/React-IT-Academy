@@ -12,25 +12,43 @@ class EditAndAdd extends React.Component {
     priceError: '',
     countError: '',
     validOk : false,
+    isChanged : false
    }
    
-    nameChanged = eo => {
-        this.setState({name:eo.target.value},this.valid);
+   componentDidUpdate(prevProps, prevState) {
+    if (prevProps.prod.id !== this.props.prod.id) {
+      this.setState({
+        id: this.props.prod.id,
+        name: this.props.prod.name,
+        url_photo: this.props.prod.url_photo,
+        price: this.props.prod.price,
+        count: this.props.prod.count,
+        isChanged: false,
+      })}
+    
+    if (prevState.isChanged !== this.state.isChanged) {
+      this.props.cbUpdateChangeStatus(this.state.isChanged);
     }
-    linkChanged = eo => {
-            this.setState({url_photo:eo.target.value},this.valid);
+  }
+  
+    nameChanged = (eo) => {
+        this.setState({name:eo.target.value, isChanged: true},this.valid);
     }
-    priceChanged = eo => {
-            this.setState({price:eo.target.value},this.valid);
+    linkChanged = (eo) => {
+            this.setState({url_photo:eo.target.value, isChanged: true},this.valid);
     }
-    countChanged = eo => {
-        this.setState({count:eo.target.value},this.valid);
+    priceChanged = (eo) => {
+            this.setState({price:eo.target.value, isChanged : true},this.valid);
+    }
+    countChanged = (eo) => {
+        this.setState({count:eo.target.value, isChanged : true},this.valid);
     }
 
     save = () => {
         if (this.state.validOk) {
           this.props.cbSaveChanges ({id: this.state.id, name: this.state.name, url_photo:this.state.url_photo, price: this.state.price, count:this.state.count}, this.valid);
         }
+        this.setState({isChanged : false})
       };
 
    valid = () =>{
