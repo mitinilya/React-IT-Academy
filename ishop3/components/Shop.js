@@ -59,7 +59,7 @@ class Shop extends React.Component {
       }
 
     else {
-      product.id = parseInt(this.state.autoproductsDel.length) + 1;
+      product.id = parseInt(this.state.autoproductsDel.length);
       products.push(product);
     }
   
