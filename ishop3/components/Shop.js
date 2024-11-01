@@ -11,6 +11,9 @@ class Shop extends React.Component {
     autoproductsDel : this.props.autoproducts,
     workMode : 0, // 0 ничего 1- просмотр 2 - редактирование/добавление
     isEditting : null,
+    isChanged : false,
+    nextId : this.props.autoproducts.length+1,
+    delAndEditButton : false
   }
 
   selectProduct = (product) => {
@@ -22,32 +25,46 @@ class Shop extends React.Component {
     })
   }
   }
-
   deleteProduct = (id) => {
-    console.log ("SHOOPDEL" + id)
     const filteredProducts = this.state.autoproductsDel.filter(product => product.id !== id);
-    this.setState({ autoproductsDel: filteredProducts, selectProduct: null });
+    if (this.state.isEditting === id) {
+      this.setState({ 
+        autoproductsDel: filteredProducts,
+        selectProduct: null,
+        isEditting: null
+      });
+    } else {
+      this.setState({ autoproductsDel: filteredProducts});
+    }
   }
+  
 
   editProduct = (product) => {
- 
+
     this.setState ({
       selectProduct: product,
       workMode: 2,
       isEditting : product.id,
+      isChanged : false
     }
   )}
     
 
   
-  
   addProduct = () => {
-    const maxId = this.state.autoproductsDel.reduce((max, item) => (item.id > max ? item.id : max), 0);
-    const newProduct = { id: parseInt(maxId) + 1, name: '', price: '', count: '', url_photo: '' };
+    const newProduct = { 
+      id: this.state.nextId, 
+      name: '', 
+      price: '', 
+      count: '', 
+      url_photo: '' 
+    };
       this.setState ({
       selectProduct: newProduct,
       workMode : 2,
       isEditting : newProduct.id,
+      delAndEditButton : true,
+      isChanged : true
     })
   }
 
@@ -59,15 +76,21 @@ class Shop extends React.Component {
       }
 
     else {
-      product.id = parseInt(this.state.autoproductsDel.length);
+     
       products.push(product);
+      this.setState(prevstate =>({
+        nextId: prevstate.nextId + 1
+      }) )
     }
+      
   
     this.setState({
       autoproductsDel: products,
-      isEditting: null,
       workMode: 1,
-      selectProduct: product
+      isEditting : null,
+      selectProduct: product,
+      delAndEditButton : false,
+      isChanged : false
     });
   };
   
@@ -77,12 +100,14 @@ class Shop extends React.Component {
     this.setState({
       isEditting: null,
       workMode: 1,
-      selectProduct: null
+      selectProduct: null,
+      delAndEditButton : false,
+      isChanged : false
     })}
   
 
-    updateChangeStatus = (isChanged) =>{
-      this.setState ({isEditting : isChanged})
+  updateChangeStatus = (isChanged) =>{
+      this.setState ({ isChanged})
 
     }
   
@@ -95,7 +120,9 @@ class Shop extends React.Component {
        cbSelectedProductColor = {this.state.selectProduct && this.state.selectProduct.id === v.id}
        cbDeleteProduct = {this.deleteProduct}
        cbEditProduct={() => this.editProduct(v)}
-       edit = {this.state.isEditting === v.id || this.state.isEditting === true}
+       cbAddProduct = {this.state.delAndEditButton}
+       edit = {this.state.isEditting === v.id}
+       isChanged={this.state.isChanged} 
        />,
     )
 
@@ -105,19 +132,20 @@ class Shop extends React.Component {
         <p className = 'Shop_Address'>{this.props.address}</p>
         <p className = "Shop_Title">{this.props.title}</p>
         <div className = "Autoproducts">{autoproductsCode}</div>
-        <input type = "button" value = "Добавить продукт" onClick = {this.addProduct} disabled = {this.state.isEditting === true} ></input>
-        {this.state.workMode == 1 && (
+        <input type = "button" value = "Добавить продукт" onClick = {this.addProduct} disabled = {this.state.isChanged} ></input>
+        {this.state.workMode == 1 && this.state.selectProduct && (
           <ViewProduct
           prod = {this.state.selectProduct}
           />
         )}
-          {this.state.workMode === 2 && (
+          {this.state.workMode === 2 && this.state.selectProduct && (
             <EditAndAdd
             key = {this.state.selectProduct.id}
             prod = {this.state.selectProduct}
             cbSaveChanges = {this.saveChangesProduct}
             cbCancelChanges = {this.cancelAddOrEditProduct}
             cbEditProduct = {() => this.editProduct(product)}
+            cbDeleteProduct = {this.deleteProduct}
             cbUpdateChangeStatus = {this.updateChangeStatus}
             />
           )}

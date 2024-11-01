@@ -36,9 +36,9 @@ class ShopDescription extends React.Component {
           </span>
           <span className="ShopDescriptionTitle_price">{this.props.price} $</span>
           <input
-          type = "button" value = "Удалить" disabled = {this.props.edit} className = "ButtonDelete" onClick = {this.buttonDel}>
+          type = "button" value = "Удалить" disabled = {this.props.edit || this.props.isChanged || this.props.cbAddProduct} className = "ButtonDelete" onClick = {this.buttonDel}>
           </input>
-          <input type = "button" value = "Изменить" disabled = {this.props.edit} onClick = {this.buttonEdit} ></input>
+          <input type = "button" value = "Изменить" disabled = {this.props.edit || this.props.isChanged || this.props.cbAddProduct} onClick = {this.buttonEdit} ></input>
   </div>
     );
   }
