@@ -21,14 +21,14 @@ export const MobileCompany = () =>
   }, [dispatch, dataLoadState]);
   
 
-  const onAddClient = (newClient) =>dispatch(addClient(newClient));
-  const onDeleteClient = (clientId)=>dispatch(deleteClient(clientId));
-  const onUpdateClient = (updatedClient) => dispatch(updateClient( updatedClient ));
+ 
 
 
   useEffect(
     () => {
-    
+      const onAddClient = (newClient) =>dispatch(addClient(newClient));
+      const onDeleteClient = (clientId)=>dispatch(deleteClient(clientId));
+      const onUpdateClient = (updatedClient) => dispatch(updateClient( updatedClient ));
       myEvent.addListener('updateClient', onUpdateClient);
       myEvent.addListener('deleteClient', onDeleteClient);
       myEvent.addListener('addClient', onAddClient);
@@ -38,7 +38,7 @@ export const MobileCompany = () =>
         myEvent.removeListener('addClient', onAddClient);
       };
     
-  }, [onAddClient, onDeleteClient, onUpdateClient]);
+  }, []);
   
     
 
