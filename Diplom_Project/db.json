@@ -1,905 +1,1621 @@
 {
-    "cars": [
-        {
-            "id": 1,
-            "brand": "Toyota",
-            "model": "Corolla",
-            "year": 2018,
-            "price": 15000,
-            "description": "A reliable compact sedan with excellent fuel efficiency and a comfortable interior.",
-            "image": "/images/1.png"
-        },
-        {
-            "id": 2,
-            "brand": "Honda",
-            "model": "Civic",
-            "year": 2020,
-            "price": 20000,
-            "description": "A stylish and sporty sedan with advanced technology and safety features.",
-            "image": "/images/2.png"
-        },
-        {
-            "id": 3,
-            "brand": "Ford",
-            "model": "Focus",
-            "year": 2019,
-            "price": 18000,
-            "description": "A compact car known for its excellent handling and modern design.",
-            "image": "/images/3.png"
-        },
-        {
-            "id": 4,
-            "brand": "Chevrolet",
-            "model": "Malibu",
-            "year": 2017,
-            "price": 16000,
-            "description": "A midsize sedan offering a smooth ride and impressive fuel economy.",
-            "image": "/images/4.png"
-        },
-        {
-            "id": 5,
-            "brand": "Nissan",
-            "model": "Altima",
-            "year": 2021,
-            "price": 22000,
-            "description": "A stylish sedan with advanced safety features and a spacious interior.",
-            "image": "/images/5.png"
-        },
-        {
-            "id": 6,
-            "brand": "Mazda",
-            "model": "Mazda3",
-            "year": 2020,
-            "price": 21000,
-            "description": "A sleek and sporty compact car with excellent driving dynamics.",
-            "image": "/images/6.png"
-        },
-        {
-            "id": 7,
-            "brand": "Volkswagen",
-            "model": "Jetta",
-            "year": 2019,
-            "price": 19000,
-            "description": "A well-crafted sedan with modern technology and a premium feel.",
-            "image": "/images/7.png"
-        },
-        {
-            "id": 8,
-            "brand": "Hyundai",
-            "model": "Elantra",
-            "year": 2021,
-            "price": 21000,
-            "description": "A compact sedan with a striking design and advanced technology features.",
-            "image": "/images/8.png"
-        },
-        {
-            "id": 9,
-            "brand": "Subaru",
-            "model": "Impreza",
-            "year": 2020,
-            "price": 20000,
-            "description": "A reliable car with all-wheel drive and a comfortable interior.",
-            "image": "/images/9.png"
-        },
-        {
-            "id": 10,
-            "brand": "Kia",
-            "model": "Optima",
-            "year": 2018,
-            "price": 17000,
-            "description": "A midsize sedan with a sleek design and plenty of modern features.",
-            "image": "/images/10.png"
-        },
-        {
-            "id": 11,
-            "brand": "Tesla",
-            "model": "Model 3",
-            "year": 2021,
-            "price": 40000,
-            "description": "A cutting-edge electric sedan with impressive performance and range.",
-            "image": "/images/11.png"
-        },
-        {
-            "id": 12,
-            "brand": "BMW",
-            "model": "3 Series",
-            "year": 2019,
-            "price": 35000,
-            "description": "A luxury sedan with sporty handling and advanced features.",
-            "image": "/images/12.png"
-        },
-        {
-            "id": 13,
-            "brand": "Mercedes-Benz",
-            "model": "C-Class",
-            "year": 2018,
-            "price": 34000,
-            "description": "A sophisticated and stylish luxury sedan with top-tier technology.",
-            "image": "/images/13.png"
-        },
-        {
-            "id": 14,
-            "brand": "Audi",
-            "model": "A4",
-            "year": 2020,
-            "price": 37000,
-            "description": "A premium sedan with excellent performance and advanced features.",
-            "image": "/images/14.png"
-        },
-        {
-            "id": 15,
-            "brand": "Lexus",
-            "model": "ES",
-            "year": 2021,
-            "price": 42000,
-            "description": "A luxury sedan with a smooth ride and a refined interior.",
-            "image": "/images/15.png"
-        },
-        {
-            "id": 16,
-            "brand": "Acura",
-            "model": "TLX",
-            "year": 2019,
-            "price": 33000,
-            "description": "A sporty luxury sedan with sharp handling and modern features.",
-            "image": "/images/16.png"
-        },
-        {
-            "id": 17,
-            "brand": "Infiniti",
-            "model": "Q50",
-            "year": 2020,
-            "price": 36000,
-            "description": "A luxury sedan with a sporty edge and a premium interior.",
-            "image": "/images/17.png"
-        },
-        {
-            "id": 18,
-            "brand": "Cadillac",
-            "model": "ATS",
-            "year": 2017,
-            "price": 28000,
-            "description": "A compact luxury sedan with powerful performance and a refined cabin.",
-            "image": "/images/18.png"
-        },
-        {
-            "id": 19,
-            "brand": "Volvo",
-            "model": "S60",
-            "year": 2021,
-            "price": 41000,
-            "description": "A premium sedan with a focus on safety and Scandinavian design.",
-            "image": "/images/19.png"
-        },
-        {
-            "id": 20,
-            "brand": "Jaguar",
-            "model": "XE",
-            "year": 2020,
-            "price": 45000,
-            "description": "A stylish and dynamic luxury sedan with British elegance.",
-            "image": "/images/20.png"
-        },
-        {
-            "id": 21,
-            "brand": "Porsche",
-            "model": "Panamera",
-            "year": 2021,
-            "price": 95000,
-            "description": "A high-performance luxury sedan with sporty handling and premium features.",
-            "image": "/images/21.png"
-        },
-        {
-            "id": 22,
-            "brand": "Toyota",
-            "model": "Camry",
-            "year": 2019,
-            "price": 23000,
-            "description": "A reliable midsize sedan with a strong reputation for quality.",
-            "image": "/images/22.png"
-        },
-        {
-            "id": 23,
-            "brand": "BMW",
-            "model": "5 Series",
-            "year": 2020,
-            "price": 45000,
-            "description": "A midsize luxury sedan with powerful engines and advanced technology.",
-            "image": "/images/23.png"
-        },
-        {
-            "id": 24,
-            "brand": "Audi",
-            "model": "A6",
-            "year": 2019,
-            "price": 48000,
-            "description": "A premium sedan with refined handling and a high-tech cabin.",
-            "image": "/images/24.png"
-        },
-        {
-            "id": 25,
-            "brand": "Mercedes-Benz",
-            "model": "E-Class",
-            "year": 2021,
-            "price": 52000,
-            "description": "A luxury sedan offering exceptional comfort and cutting-edge features.",
-            "image": "/images/25.png"
-        },
-        {
-            "id": 26,
-            "brand": "Volkswagen",
-            "model": "Passat",
-            "year": 2020,
-            "price": 28000,
-            "description": "A practical and spacious sedan with excellent build quality.",
-            "image": "/images/26.png"
-        },
-        {
-            "id": 27,
-            "brand": "Porsche",
-            "model": "Taycan",
-            "year": 2021,
-            "price": 105000,
-            "description": "A high-performance electric sedan with unmatched driving dynamics.",
-            "image": "/images/27.png"
-        },
-        {
-            "id": 28,
-            "brand": "BMW",
-            "model": "7 Series",
-            "year": 2020,
-            "price": 86000,
-            "description": "A flagship luxury sedan offering advanced features and unparalleled comfort.",
-            "image": "/images/28.png"
-        },
-        {
-            "id": 29,
-            "brand": "Audi",
-            "model": "A8",
-            "year": 2021,
-            "price": 87000,
-            "description": "A luxurious full-size sedan with cutting-edge technology and a smooth ride.",
-            "image": "/images/29.png"
-        },
-        {
-            "id": 30,
-            "brand": "Mercedes-Benz",
-            "model": "S-Class",
-            "year": 2021,
-            "price": 110000,
-            "description": "A pinnacle of luxury and innovation in the sedan segment.",
-            "image": "/images/30.png"
-        },
-        {
-            "id": 31,
-            "brand": "Volkswagen",
-            "model": "Arteon",
-            "year": 2020,
-            "price": 36000,
-            "description": "A stylish and upscale sedan with a roomy interior.",
-            "image": "/images/31.png"
-        },
-        {
-            "id": 32,
-            "brand": "BMW",
-            "model": "M5",
-            "year": 2021,
-            "price": 103000,
-            "description": "A high-performance sedan with incredible speed and handling.",
-            "image": "/images/32.png"
-        },
-        {
-            "id": 33,
-            "brand": "Audi",
-            "model": "RS7",
-            "year": 2021,
-            "price": 118000,
-            "description": "A sporty and luxurious sedan with breathtaking performance.",
-            "image": "/images/33.png"
-        },
-        {
-            "id": 34,
-            "brand": "Mercedes-Benz",
-            "model": "AMG GT 4-Door",
-            "year": 2021,
-            "price": 132000,
-            "description": "A four-door coupe blending sports car performance with everyday usability.",
-            "image": "/images/34.png"
-        },
-        {
-            "id": 35,
-            "brand": "Porsche",
-            "model": "Panamera Turbo S",
-            "year": 2021,
-            "price": 180000,
-            "description": "An ultimate high-performance luxury sedan with astonishing power.",
-            "image": "/images/35.png"
-        },
-        {
-            "id": 36,
-            "brand": "Volkswagen",
-            "model": "Golf R",
-            "year": 2022,
-            "price": 45000,
-            "description": "A sporty hatchback with excellent performance and practicality.",
-            "image": "/images/36.png"
-        },
-        {
-            "id": 37,
-            "brand": "BMW",
-            "model": "i4",
-            "year": 2022,
-            "price": 57000,
-            "description": "An all-electric luxury sedan with sporty dynamics and a sleek design.",
-            "image": "/images/37.png"
-        },
-        {
-            "id": 38,
-            "brand": "Audi",
-            "model": "e-tron GT",
-            "year": 2022,
-            "price": 99000,
-            "description": "A premium electric sedan with breathtaking performance and luxury.",
-            "image": "/images/38.png"
-        },
-        {
-            "id": 39,
-            "brand": "Mercedes-Benz",
-            "model": "EQE",
-            "year": 2022,
-            "price": 70000,
-            "description": "An electric luxury sedan offering cutting-edge technology and a smooth ride.",
-            "image": "/images/39.png"
-        },
-        {
-            "id": 40,
-            "brand": "Porsche",
-            "model": "911 Carrera",
-            "year": 2021,
-            "price": 100000,
-            "description": "A legendary sports car offering unmatched driving pleasure.",
-            "image": "/images/40.png"
-        },
-        {
-            "id": 41,
-            "brand": "Volkswagen",
-            "model": "Tiguan",
-            "year": 2021,
-            "price": 26000,
-            "description": "A compact SUV with versatile space and excellent build quality.",
-            "image": "/images/41.png"
-        },
-        {
-            "id": 42,
-            "brand": "BMW",
-            "model": "X3",
-            "year": 2021,
-            "price": 43000,
-            "description": "A luxury compact SUV offering dynamic performance and premium features.",
-            "image": "/images/42.png"
-        },
-        {
-            "id": 43,
-            "brand": "Audi",
-            "model": "Q5",
-            "year": 2021,
-            "price": 45000,
-            "description": "A luxury compact SUV with a refined interior and advanced features.",
-            "image": "/images/43.png"
-        },
-        {
-            "id": 44,
-            "brand": "Mercedes-Benz",
-            "model": "GLC",
-            "year": 2021,
-            "price": 48000,
-            "description": "A premium compact SUV with a smooth ride and modern technology.",
-            "image": "/images/44.png"
-        },
-        {
-            "id": 45,
-            "brand": "Porsche",
-            "model": "Macan",
-            "year": 2021,
-            "price": 58000,
-            "description": "A sporty compact SUV with luxurious features and thrilling performance.",
-            "image": "/images/45.png"
-        },
-        {
-            "id": 46,
-            "brand": "BMW",
-            "model": "X5",
-            "year": 2021,
-            "price": 61000,
-            "description": "A midsize luxury SUV with excellent performance and a spacious interior.",
-            "image": "/images/46.png"
-        },
-        {
-            "id": 47,
-            "brand": "Audi",
-            "model": "Q7",
-            "year": 2021,
-            "price": 65000,
-            "description": "A luxury midsize SUV with three rows of seating and advanced tech.",
-            "image": "/images/47.png"
-        },
-        {
-            "id": 48,
-            "brand": "Mercedes-Benz",
-            "model": "GLE",
-            "year": 2021,
-            "price": 69000,
-            "description": "A premium SUV offering luxury, technology, and off-road capability.",
-            "image": "/images/48.png"
-        },
-        {
-            "id": 49,
-            "brand": "Porsche",
-            "model": "Cayenne",
-            "year": 2021,
-            "price": 77000,
-            "description": "A high-performance luxury SUV with sporty handling and premium features.",
-            "image": "/images/49.png"
-        },
-        {
-            "id": 50,
-            "brand": "BMW",
-            "model": "iX",
-            "year": 2022,
-            "price": 84000,
-            "description": "A futuristic electric SUV with luxurious features and advanced tech.",
-            "image": "/images/50.png"
-        },
-        {
-            "id": 51,
-            "brand": "Audi",
-            "model": "Q8",
-            "year": 2022,
-            "price": 78000,
-            "description": "A luxurious coupe-style SUV with stunning design and performance.",
-            "image": "/images/51.png"
-        },
-        {
-            "id": 52,
-            "brand": "Mercedes-Benz",
-            "model": "GLS",
-            "year": 2022,
-            "price": 92000,
-            "description": "A full-size luxury SUV offering exceptional comfort and technology.",
-            "image": "/images/52.png"
-        },
-        {
-            "id": 53,
-            "brand": "Porsche",
-            "model": "911 Turbo",
-            "year": 2022,
-            "price": 170000,
-            "description": "A high-performance sports car with blistering speed and handling.",
-            "image": "/images/53.png"
-        },
-        {
-            "id": 54,
-            "brand": "BMW",
-            "model": "M8 Gran Coupe",
-            "year": 2022,
-            "price": 130000,
-            "description": "A luxury high-performance sedan with stunning design and dynamics.",
-            "image": "/images/54.png"
-        },
-        {
-            "id": 55,
-            "brand": "Audi",
-            "model": "RS Q8",
-            "year": 2022,
-            "price": 120000,
-            "description": "A high-performance luxury SUV with breathtaking speed and style.",
-            "image": "/images/55.png"
-        },
-        {
-            "id": 56,
-            "brand": "Renault",
-            "model": "Clio",
-            "year": 2021,
-            "price": 16000,
-            "description": "A compact hatchback with efficient engines and a stylish design.",
-            "image": "/images/56.png"
-        },
-        {
-            "id": 57,
-            "brand": "Peugeot",
-            "model": "208",
-            "year": 2021,
-            "price": 17000,
-            "description": "A modern compact car with advanced technology and a comfortable interior.",
-            "image": "/images/57.png"
-        },
-        {
-            "id": 58,
-            "brand": "Citroën",
-            "model": "C3",
-            "year": 2020,
-            "price": 15000,
-            "description": "A stylish and versatile small car with a comfortable ride.",
-            "image": "/images/58.png"
-        },
-        {
-            "id": 59,
-            "brand": "Chevrolet",
-            "model": "Silverado",
-            "year": 2021,
-            "price": 35000,
-            "description": "A powerful and capable full-size pickup truck.",
-            "image": "/images/59.png"
-        },
-        {
-            "id": 60,
-            "brand": "Ford",
-            "model": "Mustang",
-            "year": 2022,
-            "price": 55000,
-            "description": "An iconic American sports car with thrilling performance.",
-            "image": "/images/60.png"
-        },
-        {
-            "id": 61,
-            "brand": "Dodge",
-            "model": "Charger",
-            "year": 2021,
-            "price": 48000,
-            "description": "A powerful muscle car with a bold design.",
-            "image": "/images/61.png"
-        },
-        {
-            "id": 62,
-            "brand": "Lada",
-            "model": "Vesta",
-            "year": 2021,
-            "price": 12000,
-            "description": "A popular Russian sedan offering affordability and practicality.",
-            "image": "/images/62.png"
-        },
-        {
-            "id": 63,
-            "brand": "Lada",
-            "model": "Granta",
-            "year": 2020,
-            "price": 9000,
-            "description": "A budget-friendly compact car with a focus on simplicity.",
-            "image": "/images/63.png"
-        },
-        {
-            "id": 64,
-            "brand": "Fiat",
-            "model": "500",
-            "year": 2021,
-            "price": 18000,
-            "description": "A compact city car with an iconic Italian design.",
-            "image": "/images/64.png"
-        },
-        {
-            "id": 65,
-            "brand": "Alfa Romeo",
-            "model": "Giulia",
-            "year": 2021,
-            "price": 42000,
-            "description": "A luxury sports sedan with Italian flair and performance.",
-            "image": "/images/65.png"
-        },
-        {
-            "id": 66,
-            "brand": "Ferrari",
-            "model": "Portofino",
-            "year": 2022,
-            "price": 220000,
-            "description": "A luxurious convertible sports car with breathtaking performance.",
-            "image": "/images/66.png"
-        },
-        {
-            "id": 67,
-            "brand": "Lamborghini",
-            "model": "Huracan",
-            "year": 2022,
-            "price": 300000,
-            "description": "A high-performance supercar with cutting-edge design and power.",
-            "image": "/images/67.png"
-        },
-        {
-            "id": 68,
-            "brand": "Chevrolet",
-            "model": "Camaro",
-            "year": 2022,
-            "price": 45000,
-            "description": "A bold and powerful muscle car with advanced technology.",
-            "image": "/images/68.png"
-        },
-        {
-            "id": 69,
-            "brand": "Chrysler",
-            "model": "300",
-            "year": 2021,
-            "price": 40000,
-            "description": "A full-size American sedan with a spacious interior and a smooth ride.",
-            "image": "/images/69.png"
-        },
-        {
-            "id": 70,
-            "brand": "Renault",
-            "model": "Kadjar",
-            "year": 2021,
-            "price": 24000,
-            "description": "A compact SUV with a comfortable interior and efficient engines.",
-            "image": "/images/70.png"
-        },
-        {
-            "id": 71,
-            "brand": "Peugeot",
-            "model": "3008",
-            "year": 2021,
-            "price": 28000,
-            "description": "A stylish and modern compact SUV with advanced features.",
-            "image": "/images/71.png"
-        },
-        {
-            "id": 72,
-            "brand": "Citroën",
-            "model": "C5 Aircross",
-            "year": 2021,
-            "price": 27000,
-            "description": "A comfortable SUV with innovative suspension technology.",
-            "image": "/images/72.png"
-        },
-        {
-            "id": 73,
-            "brand": "Jeep",
-            "model": "Wrangler",
-            "year": 2021,
-            "price": 42000,
-            "description": "A rugged SUV with exceptional off-road capabilities.",
-            "image": "/images/73.png"
-        },
-        {
-            "id": 74,
-            "brand": "Dodge",
-            "model": "Durango",
-            "year": 2021,
-            "price": 39000,
-            "description": "A versatile SUV with powerful engine options and three rows of seating.",
-            "image": "/images/74.png"
-        },
-        {
-            "id": 75,
-            "brand": "UAZ",
-            "model": "Patriot",
-            "year": 2021,
-            "price": 15000,
-            "description": "A rugged Russian SUV with off-road capabilities and durability.",
-            "image": "/images/75.png"
-        },
-        {
-            "id": 76,
-            "brand": "Lada",
-            "model": "Niva Legend",
-            "year": 2021,
-            "price": 12000,
-            "description": "A classic off-road vehicle with a loyal following.",
-            "image": "/images/76.png"
-        },
-        {
-            "id": 77,
-            "brand": "Maserati",
-            "model": "Ghibli",
-            "year": 2021,
-            "price": 72000,
-            "description": "A luxury Italian sedan with a sporty edge.",
-            "image": "/images/77.png"
-        },
-        {
-            "id": 78,
-            "brand": "Fiat",
-            "model": "Panda",
-            "year": 2021,
-            "price": 13000,
-            "description": "A practical and economical city car.",
-            "image": "/images/78.png"
-        },
-        {
-            "id": 79,
-            "brand": "Renault",
-            "model": "Duster",
-            "year": 2021,
-            "price": 20000,
-            "description": "A budget-friendly compact SUV with great off-road capabilities.",
-            "image": "/images/79.png"
-        },
-        {
-            "id": 80,
-            "brand": "Ford",
-            "model": "Explorer",
-            "year": 2021,
-            "price": 50000,
-            "description": "A family SUV with ample space and advanced safety features.",
-            "image": "/images/80.png"
-        },
-        {
-            "id": 81,
-            "brand": "Chevrolet",
-            "model": "Tahoe",
-            "year": 2021,
-            "price": 60000,
-            "description": "A large and capable SUV with impressive towing capacity.",
-            "image": "/images/81.png"
-        },
-        {
-            "id": 82,
-            "brand": "Lamborghini",
-            "model": "Urus",
-            "year": 2022,
-            "price": 220000,
-            "description": "A luxury high-performance SUV with incredible speed and agility.",
-            "image": "/images/82.png"
-        },
-        {
-            "id": 83,
-            "brand": "Ferrari",
-            "model": "Roma",
-            "year": 2022,
-            "price": 250000,
-            "description": "A grand touring sports car with stunning design and performance.",
-            "image": "/images/83.png"
-        },
-        {
-            "id": 84,
-            "brand": "Alfa Romeo",
-            "model": "Stelvio",
-            "year": 2021,
-            "price": 52000,
-            "description": "A sporty Italian SUV with dynamic handling and premium features.",
-            "image": "/images/84.png"
-        },
-        {
-            "id": 85,
-            "brand": "Jeep",
-            "model": "Grand Cherokee",
-            "year": 2021,
-            "price": 46000,
-            "description": "A capable midsize SUV with luxury and off-road capabilities.",
-            "image": "/images/85.png"
-        },
-        {
-            "id": 86,
-            "brand": "Maserati",
-            "model": "Levante",
-            "year": 2021,
-            "price": 78000,
-            "description": "A luxury Italian SUV with sporty performance.",
-            "image": "/images/86.png"
-        },
-        {
-            "id": 87,
-            "brand": "Citroën",
-            "model": "Berlingo",
-            "year": 2021,
-            "price": 25000,
-            "description": "A practical MPV with plenty of space for families.",
-            "image": "/images/87.png"
-        },
-        {
-            "id": 88,
-            "brand": "Ford",
-            "model": "Bronco",
-            "year": 2022,
-            "price": 43000,
-            "description": "A rugged SUV designed for adventure and off-road challenges.",
-            "image": "/images/88.png"
-        },
-        {
-            "id": 89,
-            "brand": "Renault",
-            "model": "Talisman",
-            "year": 2021,
-            "price": 32000,
-            "description": "A stylish midsize sedan with premium comfort and features.",
-            "image": "/images/89.png"
-        },
-        {
-            "id": 90,
-            "brand": "Lada",
-            "model": "XRay",
-            "year": 2021,
-            "price": 14000,
-            "description": "A compact crossover with a bold design and affordable price.",
-            "image": "/images/90.png"
-        },
-        {
-            "id": 91,
-            "brand": "Chevrolet",
-            "model": "Trailblazer",
-            "year": 2021,
-            "price": 23000,
-            "description": "A compact SUV with a stylish design and practical features.",
-            "image": "/images/91.png"
-        },
-        {
-            "id": 92,
-            "brand": "Peugeot",
-            "model": "508",
-            "year": 2021,
-            "price": 35000,
-            "description": "A sleek and modern midsize sedan with advanced technology.",
-            "image": "/images/92.png"
-        },
-        {
-            "id": 93,
-            "brand": "Jeep",
-            "model": "Compass",
-            "year": 2021,
-            "price": 32000,
-            "description": "A compact SUV with a comfortable interior and off-road capabilities.",
-            "image": "/images/93.png"
-        },
-        {
-            "id": 94,
-            "brand": "Alfa Romeo",
-            "model": "Tonale",
-            "year": 2022,
-            "price": 36000,
-            "description": "A compact luxury SUV with Italian design and driving dynamics.",
-            "image": "/images/94.png"
-        },
-        {
-            "id": 95,
-            "brand": "Ford",
-            "model": "Ranger",
-            "year": 2022,
-            "price": 34000,
-            "description": "A versatile midsize pickup truck with rugged capabilities.",
-            "image": "/images/95.png"
-        },
-        {
-            "id": 96,
-            "brand": "Fiat",
-            "model": "Tipo",
-            "year": 2021,
-            "price": 19000,
-            "description": "A practical and budget-friendly compact sedan.",
-            "image": "/images/96.png"
-        },
-        {
-            "id": 97,
-            "brand": "Citroën",
-            "model": "C4",
-            "year": 2021,
-            "price": 22000,
-            "description": "A modern compact car with a bold design.",
-            "image": "/images/97.png"
-        },
-        {
-            "id": 98,
-            "brand": "Dacia",
-            "model": "Sandero",
-            "year": 2021,
-            "price": 11000,
-            "description": "A budget-friendly hatchback with practical features.",
-            "image": "/images/98.png"
-        },
-        {
-            "id": 99,
-            "brand": "Ferrari",
-            "model": "SF90 Stradale",
-            "year": 2022,
-            "price": 500000,
-            "description": "A hybrid hypercar offering extreme performance and cutting-edge technology.",
-            "image": "/images/99.png"
-        },
-        {
-            "id": 100,
-            "brand": "Renault",
-            "model": "Zoe",
-            "year": 2021,
-            "price": 33000,
-            "description": "A popular electric car with a modern design and efficient performance.",
-            "image": "/images/100.png"
-        }
-    ],
-    "cart": []
+  "cars": [
+    {
+      "id": "1",
+      "brand": "Toyota",
+      "model": "Corolla",
+      "year": 2018,
+      "price": 15000,
+      "description": "A reliable compact sedan with excellent fuel efficiency and a comfortable interior.",
+      "image": "/images/1.png"
+    },
+    {
+      "id": "2",
+      "brand": "Honda",
+      "model": "Civic",
+      "year": 2020,
+      "price": 20000,
+      "description": "A stylish and sporty sedan with advanced technology and safety features.",
+      "image": "/images/2.png"
+    },
+    {
+      "id": "3",
+      "brand": "Ford",
+      "model": "Focus",
+      "year": 2019,
+      "price": 18000,
+      "description": "A compact car known for its excellent handling and modern design.",
+      "image": "/images/3.png"
+    },
+    {
+      "id": "4",
+      "brand": "Chevrolet",
+      "model": "Malibu",
+      "year": 2017,
+      "price": 16000,
+      "description": "A midsize sedan offering a smooth ride and impressive fuel economy.",
+      "image": "/images/4.png"
+    },
+    {
+      "id": "5",
+      "brand": "Nissan",
+      "model": "Altima",
+      "year": 2021,
+      "price": 22000,
+      "description": "A stylish sedan with advanced safety features and a spacious interior.",
+      "image": "/images/5.png"
+    },
+    {
+      "id": "6",
+      "brand": "Mazda",
+      "model": "Mazda3",
+      "year": 2020,
+      "price": 21000,
+      "description": "A sleek and sporty compact car with excellent driving dynamics.",
+      "image": "/images/6.png"
+    },
+    {
+      "id": "7",
+      "brand": "Volkswagen",
+      "model": "Jetta",
+      "year": 2019,
+      "price": 19000,
+      "description": "A well-crafted sedan with modern technology and a premium feel.",
+      "image": "/images/7.png"
+    },
+    {
+      "id": "8",
+      "brand": "Hyundai",
+      "model": "Elantra",
+      "year": 2021,
+      "price": 21000,
+      "description": "A compact sedan with a striking design and advanced technology features.",
+      "image": "/images/8.png"
+    },
+    {
+      "id": "9",
+      "brand": "Subaru",
+      "model": "Impreza",
+      "year": 2020,
+      "price": 20000,
+      "description": "A reliable car with all-wheel drive and a comfortable interior.",
+      "image": "/images/9.png"
+    },
+    {
+      "id": "10",
+      "brand": "Kia",
+      "model": "Optima",
+      "year": 2018,
+      "price": 17000,
+      "description": "A midsize sedan with a sleek design and plenty of modern features.",
+      "image": "/images/10.png"
+    },
+    {
+      "id": "11",
+      "brand": "Tesla",
+      "model": "Model 3",
+      "year": 2021,
+      "price": 40000,
+      "description": "A cutting-edge electric sedan with impressive performance and range.",
+      "image": "/images/11.png"
+    },
+    {
+      "id": "12",
+      "brand": "BMW",
+      "model": "3 Series",
+      "year": 2019,
+      "price": 35000,
+      "description": "A luxury sedan with sporty handling and advanced features.",
+      "image": "/images/12.png"
+    },
+    {
+      "id": "13",
+      "brand": "Mercedes-Benz",
+      "model": "C-Class",
+      "year": 2018,
+      "price": 34000,
+      "description": "A sophisticated and stylish luxury sedan with top-tier technology.",
+      "image": "/images/13.png"
+    },
+    {
+      "id": "14",
+      "brand": "Audi",
+      "model": "A4",
+      "year": 2020,
+      "price": 37000,
+      "description": "A premium sedan with excellent performance and advanced features.",
+      "image": "/images/14.png"
+    },
+    {
+      "id": "15",
+      "brand": "Lexus",
+      "model": "ES",
+      "year": 2021,
+      "price": 42000,
+      "description": "A luxury sedan with a smooth ride and a refined interior.",
+      "image": "/images/15.png"
+    },
+    {
+      "id": "16",
+      "brand": "Acura",
+      "model": "TLX",
+      "year": 2019,
+      "price": 33000,
+      "description": "A sporty luxury sedan with sharp handling and modern features.",
+      "image": "/images/16.png"
+    },
+    {
+      "id": "17",
+      "brand": "Infiniti",
+      "model": "Q50",
+      "year": 2020,
+      "price": 36000,
+      "description": "A luxury sedan with a sporty edge and a premium interior.",
+      "image": "/images/17.png"
+    },
+    {
+      "id": "18",
+      "brand": "Cadillac",
+      "model": "ATS",
+      "year": 2017,
+      "price": 28000,
+      "description": "A compact luxury sedan with powerful performance and a refined cabin.",
+      "image": "/images/18.png"
+    },
+    {
+      "id": "19",
+      "brand": "Volvo",
+      "model": "S60",
+      "year": 2021,
+      "price": 41000,
+      "description": "A premium sedan with a focus on safety and Scandinavian design.",
+      "image": "/images/19.png"
+    },
+    {
+      "id": "20",
+      "brand": "Jaguar",
+      "model": "XE",
+      "year": 2020,
+      "price": 45000,
+      "description": "A stylish and dynamic luxury sedan with British elegance.",
+      "image": "/images/20.png"
+    },
+    {
+      "id": "21",
+      "brand": "Porsche",
+      "model": "Panamera",
+      "year": 2021,
+      "price": 95000,
+      "description": "A high-performance luxury sedan with sporty handling and premium features.",
+      "image": "/images/21.png"
+    },
+    {
+      "id": "22",
+      "brand": "Toyota",
+      "model": "Camry",
+      "year": 2019,
+      "price": 23000,
+      "description": "A reliable midsize sedan with a strong reputation for quality.",
+      "image": "/images/22.png"
+    },
+    {
+      "id": "23",
+      "brand": "BMW",
+      "model": "5 Series",
+      "year": 2020,
+      "price": 45000,
+      "description": "A midsize luxury sedan with powerful engines and advanced technology.",
+      "image": "/images/23.png"
+    },
+    {
+      "id": "24",
+      "brand": "Audi",
+      "model": "A6",
+      "year": 2019,
+      "price": 48000,
+      "description": "A premium sedan with refined handling and a high-tech cabin.",
+      "image": "/images/24.png"
+    },
+    {
+      "id": "25",
+      "brand": "Mercedes-Benz",
+      "model": "E-Class",
+      "year": 2021,
+      "price": 52000,
+      "description": "A luxury sedan offering exceptional comfort and cutting-edge features.",
+      "image": "/images/25.png"
+    },
+    {
+      "id": "26",
+      "brand": "Volkswagen",
+      "model": "Passat",
+      "year": 2020,
+      "price": 28000,
+      "description": "A practical and spacious sedan with excellent build quality.",
+      "image": "/images/26.png"
+    },
+    {
+      "id": "27",
+      "brand": "Porsche",
+      "model": "Taycan",
+      "year": 2021,
+      "price": 105000,
+      "description": "A high-performance electric sedan with unmatched driving dynamics.",
+      "image": "/images/27.png"
+    },
+    {
+      "id": "28",
+      "brand": "BMW",
+      "model": "7 Series",
+      "year": 2020,
+      "price": 86000,
+      "description": "A flagship luxury sedan offering advanced features and unparalleled comfort.",
+      "image": "/images/28.png"
+    },
+    {
+      "id": "29",
+      "brand": "Audi",
+      "model": "A8",
+      "year": 2021,
+      "price": 87000,
+      "description": "A luxurious full-size sedan with cutting-edge technology and a smooth ride.",
+      "image": "/images/29.png"
+    },
+    {
+      "id": "30",
+      "brand": "Mercedes-Benz",
+      "model": "S-Class",
+      "year": 2021,
+      "price": 110000,
+      "description": "A pinnacle of luxury and innovation in the sedan segment.",
+      "image": "/images/30.png"
+    },
+    {
+      "id": "31",
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "year": 2020,
+      "price": 36000,
+      "description": "A stylish and upscale sedan with a roomy interior.",
+      "image": "/images/31.png"
+    },
+    {
+      "id": "32",
+      "brand": "BMW",
+      "model": "M5",
+      "year": 2021,
+      "price": 103000,
+      "description": "A high-performance sedan with incredible speed and handling.",
+      "image": "/images/32.png"
+    },
+    {
+      "id": "33",
+      "brand": "Audi",
+      "model": "RS7",
+      "year": 2021,
+      "price": 118000,
+      "description": "A sporty and luxurious sedan with breathtaking performance.",
+      "image": "/images/33.png"
+    },
+    {
+      "id": "34",
+      "brand": "Mercedes-Benz",
+      "model": "AMG GT 4-Door",
+      "year": 2021,
+      "price": 132000,
+      "description": "A four-door coupe blending sports car performance with everyday usability.",
+      "image": "/images/34.png"
+    },
+    {
+      "id": "35",
+      "brand": "Porsche",
+      "model": "Panamera Turbo S",
+      "year": 2021,
+      "price": 180000,
+      "description": "An ultimate high-performance luxury sedan with astonishing power.",
+      "image": "/images/35.png"
+    },
+    {
+      "id": "36",
+      "brand": "Volkswagen",
+      "model": "Golf R",
+      "year": 2022,
+      "price": 45000,
+      "description": "A sporty hatchback with excellent performance and practicality.",
+      "image": "/images/36.png"
+    },
+    {
+      "id": "37",
+      "brand": "BMW",
+      "model": "i4",
+      "year": 2022,
+      "price": 57000,
+      "description": "An all-electric luxury sedan with sporty dynamics and a sleek design.",
+      "image": "/images/37.png"
+    },
+    {
+      "id": "38",
+      "brand": "Audi",
+      "model": "e-tron GT",
+      "year": 2022,
+      "price": 99000,
+      "description": "A premium electric sedan with breathtaking performance and luxury.",
+      "image": "/images/38.png"
+    },
+    {
+      "id": "39",
+      "brand": "Mercedes-Benz",
+      "model": "EQE",
+      "year": 2022,
+      "price": 70000,
+      "description": "An electric luxury sedan offering cutting-edge technology and a smooth ride.",
+      "image": "/images/39.png"
+    },
+    {
+      "id": "40",
+      "brand": "Porsche",
+      "model": "911 Carrera",
+      "year": 2021,
+      "price": 100000,
+      "description": "A legendary sports car offering unmatched driving pleasure.",
+      "image": "/images/40.png"
+    },
+    {
+      "id": "41",
+      "brand": "Volkswagen",
+      "model": "Tiguan",
+      "year": 2021,
+      "price": 26000,
+      "description": "A compact SUV with versatile space and excellent build quality.",
+      "image": "/images/41.png"
+    },
+    {
+      "id": "42",
+      "brand": "BMW",
+      "model": "X3",
+      "year": 2021,
+      "price": 43000,
+      "description": "A luxury compact SUV offering dynamic performance and premium features.",
+      "image": "/images/42.png"
+    },
+    {
+      "id": "43",
+      "brand": "Audi",
+      "model": "Q5",
+      "year": 2021,
+      "price": 45000,
+      "description": "A luxury compact SUV with a refined interior and advanced features.",
+      "image": "/images/43.png"
+    },
+    {
+      "id": "44",
+      "brand": "Mercedes-Benz",
+      "model": "GLC",
+      "year": 2021,
+      "price": 48000,
+      "description": "A premium compact SUV with a smooth ride and modern technology.",
+      "image": "/images/44.png"
+    },
+    {
+      "id": "45",
+      "brand": "Porsche",
+      "model": "Macan",
+      "year": 2021,
+      "price": 58000,
+      "description": "A sporty compact SUV with luxurious features and thrilling performance.",
+      "image": "/images/45.png"
+    },
+    {
+      "id": "46",
+      "brand": "BMW",
+      "model": "X5",
+      "year": 2021,
+      "price": 61000,
+      "description": "A midsize luxury SUV with excellent performance and a spacious interior.",
+      "image": "/images/46.png"
+    },
+    {
+      "id": "47",
+      "brand": "Audi",
+      "model": "Q7",
+      "year": 2021,
+      "price": 65000,
+      "description": "A luxury midsize SUV with three rows of seating and advanced tech.",
+      "image": "/images/47.png"
+    },
+    {
+      "id": "48",
+      "brand": "Mercedes-Benz",
+      "model": "GLE",
+      "year": 2021,
+      "price": 69000,
+      "description": "A premium SUV offering luxury, technology, and off-road capability.",
+      "image": "/images/48.png"
+    },
+    {
+      "id": "49",
+      "brand": "Porsche",
+      "model": "Cayenne",
+      "year": 2021,
+      "price": 77000,
+      "description": "A high-performance luxury SUV with sporty handling and premium features.",
+      "image": "/images/49.png"
+    },
+    {
+      "id": "50",
+      "brand": "BMW",
+      "model": "iX",
+      "year": 2022,
+      "price": 84000,
+      "description": "A futuristic electric SUV with luxurious features and advanced tech.",
+      "image": "/images/50.png"
+    },
+    {
+      "id": "51",
+      "brand": "Audi",
+      "model": "Q8",
+      "year": 2022,
+      "price": 78000,
+      "description": "A luxurious coupe-style SUV with stunning design and performance.",
+      "image": "/images/51.png"
+    },
+    {
+      "id": "52",
+      "brand": "Mercedes-Benz",
+      "model": "GLS",
+      "year": 2022,
+      "price": 92000,
+      "description": "A full-size luxury SUV offering exceptional comfort and technology.",
+      "image": "/images/52.png"
+    },
+    {
+      "id": "53",
+      "brand": "Porsche",
+      "model": "911 Turbo",
+      "year": 2022,
+      "price": 170000,
+      "description": "A high-performance sports car with blistering speed and handling.",
+      "image": "/images/53.png"
+    },
+    {
+      "id": "54",
+      "brand": "BMW",
+      "model": "M8 Gran Coupe",
+      "year": 2022,
+      "price": 130000,
+      "description": "A luxury high-performance sedan with stunning design and dynamics.",
+      "image": "/images/54.png"
+    },
+    {
+      "id": "55",
+      "brand": "Audi",
+      "model": "RS Q8",
+      "year": 2022,
+      "price": 120000,
+      "description": "A high-performance luxury SUV with breathtaking speed and style.",
+      "image": "/images/55.png"
+    },
+    {
+      "id": "56",
+      "brand": "Renault",
+      "model": "Clio",
+      "year": 2021,
+      "price": 16000,
+      "description": "A compact hatchback with efficient engines and a stylish design.",
+      "image": "/images/56.png"
+    },
+    {
+      "id": "57",
+      "brand": "Peugeot",
+      "model": "208",
+      "year": 2021,
+      "price": 17000,
+      "description": "A modern compact car with advanced technology and a comfortable interior.",
+      "image": "/images/57.png"
+    },
+    {
+      "id": "58",
+      "brand": "Citroën",
+      "model": "C3",
+      "year": 2020,
+      "price": 15000,
+      "description": "A stylish and versatile small car with a comfortable ride.",
+      "image": "/images/58.png"
+    },
+    {
+      "id": "59",
+      "brand": "Chevrolet",
+      "model": "Silverado",
+      "year": 2021,
+      "price": 35000,
+      "description": "A powerful and capable full-size pickup truck.",
+      "image": "/images/59.png"
+    },
+    {
+      "id": "60",
+      "brand": "Ford",
+      "model": "Mustang",
+      "year": 2022,
+      "price": 55000,
+      "description": "An iconic American sports car with thrilling performance.",
+      "image": "/images/60.png"
+    },
+    {
+      "id": "61",
+      "brand": "Dodge",
+      "model": "Charger",
+      "year": 2021,
+      "price": 48000,
+      "description": "A powerful muscle car with a bold design.",
+      "image": "/images/61.png"
+    },
+    {
+      "id": "62",
+      "brand": "Lada",
+      "model": "Vesta",
+      "year": 2021,
+      "price": 12000,
+      "description": "A popular Russian sedan offering affordability and practicality.",
+      "image": "/images/62.png"
+    },
+    {
+      "id": "63",
+      "brand": "Lada",
+      "model": "Granta",
+      "year": 2020,
+      "price": 9000,
+      "description": "A budget-friendly compact car with a focus on simplicity.",
+      "image": "/images/63.png"
+    },
+    {
+      "id": "64",
+      "brand": "Fiat",
+      "model": "500",
+      "year": 2021,
+      "price": 18000,
+      "description": "A compact city car with an iconic Italian design.",
+      "image": "/images/64.png"
+    },
+    {
+      "id": "65",
+      "brand": "Alfa Romeo",
+      "model": "Giulia",
+      "year": 2021,
+      "price": 42000,
+      "description": "A luxury sports sedan with Italian flair and performance.",
+      "image": "/images/65.png"
+    },
+    {
+      "id": "66",
+      "brand": "Ferrari",
+      "model": "Portofino",
+      "year": 2022,
+      "price": 220000,
+      "description": "A luxurious convertible sports car with breathtaking performance.",
+      "image": "/images/66.png"
+    },
+    {
+      "id": "67",
+      "brand": "Lamborghini",
+      "model": "Huracan",
+      "year": 2022,
+      "price": 300000,
+      "description": "A high-performance supercar with cutting-edge design and power.",
+      "image": "/images/67.png"
+    },
+    {
+      "id": "68",
+      "brand": "Chevrolet",
+      "model": "Camaro",
+      "year": 2022,
+      "price": 45000,
+      "description": "A bold and powerful muscle car with advanced technology.",
+      "image": "/images/68.png"
+    },
+    {
+      "id": "69",
+      "brand": "Chrysler",
+      "model": "300",
+      "year": 2021,
+      "price": 40000,
+      "description": "A full-size American sedan with a spacious interior and a smooth ride.",
+      "image": "/images/69.png"
+    },
+    {
+      "id": "70",
+      "brand": "Renault",
+      "model": "Kadjar",
+      "year": 2021,
+      "price": 24000,
+      "description": "A compact SUV with a comfortable interior and efficient engines.",
+      "image": "/images/70.png"
+    },
+    {
+      "id": "71",
+      "brand": "Peugeot",
+      "model": "3008",
+      "year": 2021,
+      "price": 28000,
+      "description": "A stylish and modern compact SUV with advanced features.",
+      "image": "/images/71.png"
+    },
+    {
+      "id": "72",
+      "brand": "Citroën",
+      "model": "C5 Aircross",
+      "year": 2021,
+      "price": 27000,
+      "description": "A comfortable SUV with innovative suspension technology.",
+      "image": "/images/72.png"
+    },
+    {
+      "id": "73",
+      "brand": "Jeep",
+      "model": "Wrangler",
+      "year": 2021,
+      "price": 42000,
+      "description": "A rugged SUV with exceptional off-road capabilities.",
+      "image": "/images/73.png"
+    },
+    {
+      "id": "74",
+      "brand": "Dodge",
+      "model": "Durango",
+      "year": 2021,
+      "price": 39000,
+      "description": "A versatile SUV with powerful engine options and three rows of seating.",
+      "image": "/images/74.png"
+    },
+    {
+      "id": "75",
+      "brand": "UAZ",
+      "model": "Patriot",
+      "year": 2021,
+      "price": 15000,
+      "description": "A rugged Russian SUV with off-road capabilities and durability.",
+      "image": "/images/75.png"
+    },
+    {
+      "id": "76",
+      "brand": "Lada",
+      "model": "Niva Legend",
+      "year": 2021,
+      "price": 12000,
+      "description": "A classic off-road vehicle with a loyal following.",
+      "image": "/images/76.png"
+    },
+    {
+      "id": "77",
+      "brand": "Maserati",
+      "model": "Ghibli",
+      "year": 2021,
+      "price": 72000,
+      "description": "A luxury Italian sedan with a sporty edge.",
+      "image": "/images/77.png"
+    },
+    {
+      "id": "78",
+      "brand": "Fiat",
+      "model": "Panda",
+      "year": 2021,
+      "price": 13000,
+      "description": "A practical and economical city car.",
+      "image": "/images/78.png"
+    },
+    {
+      "id": "79",
+      "brand": "Renault",
+      "model": "Duster",
+      "year": 2021,
+      "price": 20000,
+      "description": "A budget-friendly compact SUV with great off-road capabilities.",
+      "image": "/images/79.png"
+    },
+    {
+      "id": "80",
+      "brand": "Ford",
+      "model": "Explorer",
+      "year": 2021,
+      "price": 50000,
+      "description": "A family SUV with ample space and advanced safety features.",
+      "image": "/images/80.png"
+    },
+    {
+      "id": "81",
+      "brand": "Chevrolet",
+      "model": "Tahoe",
+      "year": 2021,
+      "price": 60000,
+      "description": "A large and capable SUV with impressive towing capacity.",
+      "image": "/images/81.png"
+    },
+    {
+      "id": "82",
+      "brand": "Lamborghini",
+      "model": "Urus",
+      "year": 2022,
+      "price": 220000,
+      "description": "A luxury high-performance SUV with incredible speed and agility.",
+      "image": "/images/82.png"
+    },
+    {
+      "id": "83",
+      "brand": "Ferrari",
+      "model": "Roma",
+      "year": 2022,
+      "price": 250000,
+      "description": "A grand touring sports car with stunning design and performance.",
+      "image": "/images/83.png"
+    },
+    {
+      "id": "84",
+      "brand": "Alfa Romeo",
+      "model": "Stelvio",
+      "year": 2021,
+      "price": 52000,
+      "description": "A sporty Italian SUV with dynamic handling and premium features.",
+      "image": "/images/84.png"
+    },
+    {
+      "id": "85",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "year": 2021,
+      "price": 46000,
+      "description": "A capable midsize SUV with luxury and off-road capabilities.",
+      "image": "/images/85.png"
+    },
+    {
+      "id": "86",
+      "brand": "Maserati",
+      "model": "Levante",
+      "year": 2021,
+      "price": 78000,
+      "description": "A luxury Italian SUV with sporty performance.",
+      "image": "/images/86.png"
+    },
+    {
+      "id": "87",
+      "brand": "Citroën",
+      "model": "Berlingo",
+      "year": 2021,
+      "price": 25000,
+      "description": "A practical MPV with plenty of space for families.",
+      "image": "/images/87.png"
+    },
+    {
+      "id": "88",
+      "brand": "Ford",
+      "model": "Bronco",
+      "year": 2022,
+      "price": 43000,
+      "description": "A rugged SUV designed for adventure and off-road challenges.",
+      "image": "/images/88.png"
+    },
+    {
+      "id": "89",
+      "brand": "Renault",
+      "model": "Talisman",
+      "year": 2021,
+      "price": 32000,
+      "description": "A stylish midsize sedan with premium comfort and features.",
+      "image": "/images/89.png"
+    },
+    {
+      "id": "90",
+      "brand": "Lada",
+      "model": "XRay",
+      "year": 2021,
+      "price": 14000,
+      "description": "A compact crossover with a bold design and affordable price.",
+      "image": "/images/90.png"
+    },
+    {
+      "id": "91",
+      "brand": "Chevrolet",
+      "model": "Trailblazer",
+      "year": 2021,
+      "price": 23000,
+      "description": "A compact SUV with a stylish design and practical features.",
+      "image": "/images/91.png"
+    },
+    {
+      "id": "92",
+      "brand": "Peugeot",
+      "model": "508",
+      "year": 2021,
+      "price": 35000,
+      "description": "A sleek and modern midsize sedan with advanced technology.",
+      "image": "/images/92.png"
+    },
+    {
+      "id": "93",
+      "brand": "Jeep",
+      "model": "Compass",
+      "year": 2021,
+      "price": 32000,
+      "description": "A compact SUV with a comfortable interior and off-road capabilities.",
+      "image": "/images/93.png"
+    },
+    {
+      "id": "94",
+      "brand": "Alfa Romeo",
+      "model": "Tonale",
+      "year": 2022,
+      "price": 36000,
+      "description": "A compact luxury SUV with Italian design and driving dynamics.",
+      "image": "/images/94.png"
+    },
+    {
+      "id": "95",
+      "brand": "Ford",
+      "model": "Ranger",
+      "year": 2022,
+      "price": 34000,
+      "description": "A versatile midsize pickup truck with rugged capabilities.",
+      "image": "/images/95.png"
+    },
+    {
+      "id": "96",
+      "brand": "Fiat",
+      "model": "Tipo",
+      "year": 2021,
+      "price": 19000,
+      "description": "A practical and budget-friendly compact sedan.",
+      "image": "/images/96.png"
+    },
+    {
+      "id": "97",
+      "brand": "Citroën",
+      "model": "C4",
+      "year": 2021,
+      "price": 22000,
+      "description": "A modern compact car with a bold design.",
+      "image": "/images/97.png"
+    },
+    {
+      "id": "98",
+      "brand": "Dacia",
+      "model": "Sandero",
+      "year": 2021,
+      "price": 11000,
+      "description": "A budget-friendly hatchback with practical features.",
+      "image": "/images/98.png"
+    },
+    {
+      "id": "99",
+      "brand": "Ferrari",
+      "model": "SF90 Stradale",
+      "year": 2022,
+      "price": 500000,
+      "description": "A hybrid hypercar offering extreme performance and cutting-edge technology.",
+      "image": "/images/99.png"
+    },
+    {
+      "id": "100",
+      "brand": "Renault",
+      "model": "Zoe",
+      "year": 2021,
+      "price": 33000,
+      "description": "A popular electric car with a modern design and efficient performance.",
+      "image": "/images/100.png"
+    },
+    {
+      "id": "101",
+      "brand": "Peugeot",
+      "model": "307",
+      "year": 2005,
+      "price": 4500,
+      "type": "diesel",
+      "mileage": 170000,
+      "description": "A reliable French diesel car with great fuel efficiency.",
+      "image": "/images/101.png"
+    },
+    {
+      "id": "102",
+      "brand": "Volkswagen",
+      "model": "Golf",
+      "year": 2007,
+      "price": 6000,
+      "type": "petrol",
+      "mileage": 145000,
+      "description": "A compact German petrol car known for its performance and durability.",
+      "image": "/images/102.png"
+    },
+    {
+      "id": "103",
+      "brand": "Renault",
+      "model": "Clio",
+      "year": 2008,
+      "price": 5000,
+      "type": "diesel",
+      "mileage": 160000,
+      "description": "A small and economical diesel car, perfect for city driving.",
+      "image": "/images/103.png"
+    },
+    {
+      "id": "104",
+      "brand": "BMW",
+      "model": "3 Series",
+      "year": 2004,
+      "price": 7500,
+      "type": "petrol",
+      "mileage": 180000,
+      "description": "A luxury German car with excellent driving dynamics.",
+      "image": "/images/104.png"
+    },
+    {
+      "id": "105",
+      "brand": "Citroën",
+      "model": "C5",
+      "year": 2006,
+      "price": 5500,
+      "type": "diesel",
+      "mileage": 155000,
+      "description": "A spacious and comfortable French car with a powerful diesel engine.",
+      "image": "/images/105.png"
+    },
+    {
+      "id": "106",
+      "brand": "Audi",
+      "model": "A4",
+      "year": 2009,
+      "price": 9500,
+      "type": "petrol",
+      "mileage": 140000,
+      "description": "A premium German sedan with great performance and reliability.",
+      "image": "/images/106.png"
+    },
+    {
+      "id": "107",
+      "brand": "Renault",
+      "model": "Laguna",
+      "year": 2005,
+      "price": 4000,
+      "type": "diesel",
+      "mileage": 180000,
+      "description": "A practical French car with efficient fuel consumption.",
+      "image": "/images/107.png"
+    },
+    {
+      "id": "108",
+      "brand": "Peugeot",
+      "model": "206",
+      "year": 2003,
+      "price": 3000,
+      "type": "petrol",
+      "mileage": 200000,
+      "description": "A compact French petrol car with low maintenance costs.",
+      "image": "/images/108.png"
+    },
+    {
+      "id": "109",
+      "brand": "Mercedes-Benz",
+      "model": "E-Class",
+      "year": 2002,
+      "price": 8500,
+      "type": "diesel",
+      "mileage": 190000,
+      "description": "A luxury German sedan with an impressive diesel engine.",
+      "image": "/images/109.png"
+    },
+    {
+      "id": "110",
+      "brand": "Volkswagen",
+      "model": "Passat",
+      "year": 2006,
+      "price": 6500,
+      "type": "diesel",
+      "mileage": 175000,
+      "description": "A versatile and reliable German diesel car.",
+      "image": "/images/110.png"
+    },
+    {
+      "id": "111",
+      "brand": "Audi",
+      "model": "A3",
+      "year": 2008,
+      "price": 7000,
+      "type": "petrol",
+      "mileage": 130000,
+      "description": "A compact premium car from Audi with a sporty petrol engine.",
+      "image": "/images/111.png"
+    },
+    {
+      "id": "112",
+      "brand": "Citroën",
+      "model": "Berlingo",
+      "year": 2001,
+      "price": 3500,
+      "type": "diesel",
+      "mileage": 210000,
+      "description": "A reliable and spacious French van with a durable diesel engine.",
+      "image": "/images/112.png"
+    },
+    {
+      "id": "113",
+      "brand": "BMW",
+      "model": "5 Series",
+      "year": 2007,
+      "price": 10500,
+      "type": "petrol",
+      "mileage": 160000,
+      "description": "A luxury executive car with unmatched driving comfort.",
+      "image": "/images/113.png"
+    },
+    {
+      "id": "114",
+      "brand": "Volkswagen",
+      "model": "Touran",
+      "year": 2005,
+      "price": 5800,
+      "type": "diesel",
+      "mileage": 185000,
+      "description": "A compact German MPV with excellent fuel efficiency.",
+      "image": "/images/114.png"
+    },
+    {
+      "id": "115",
+      "brand": "Peugeot",
+      "model": "508",
+      "year": 2010,
+      "price": 8500,
+      "type": "diesel",
+      "mileage": 150000,
+      "description": "A comfortable French sedan with modern features and great mileage.",
+      "image": "/images/115.png"
+    },
+    {
+      "id": "116",
+      "brand": "Audi",
+      "model": "Q7",
+      "year": 2009,
+      "price": 11000,
+      "type": "diesel",
+      "mileage": 180000,
+      "description": "A premium German SUV with spacious interiors and powerful performance.",
+      "image": "/images/116.png"
+    },
+    {
+      "id": "117",
+      "brand": "Renault",
+      "model": "Scenic",
+      "year": 2008,
+      "price": 5500,
+      "type": "diesel",
+      "mileage": 170000,
+      "description": "A practical French MPV ideal for family travel.",
+      "image": "/images/117.png"
+    },
+    {
+      "id": "118",
+      "brand": "BMW",
+      "model": "X3",
+      "year": 2009,
+      "price": 12000,
+      "type": "diesel",
+      "mileage": 160000,
+      "description": "A compact German SUV with excellent road handling.",
+      "image": "/images/118.png"
+    },
+    {
+      "id": "119",
+      "brand": "Mercedes-Benz",
+      "model": "C-Class",
+      "year": 2008,
+      "price": 9500,
+      "type": "petrol",
+      "mileage": 140000,
+      "description": "A German luxury car offering smooth rides and top-notch features.",
+      "image": "/images/119.png"
+    },
+    {
+      "id": "120",
+      "brand": "Citroën",
+      "model": "C4",
+      "year": 2006,
+      "price": 5200,
+      "type": "petrol",
+      "mileage": 165000,
+      "description": "A stylish French hatchback with good fuel efficiency.",
+      "image": "/images/120.png"
+    },
+    {
+      "id": "121",
+      "brand": "Peugeot",
+      "model": "307 SW",
+      "year": 2007,
+      "price": 6000,
+      "type": "diesel",
+      "mileage": 170000,
+      "description": "A spacious French estate car with reliable performance.",
+      "image": "/images/121.png"
+    },
+    {
+      "id": "122",
+      "brand": "Volkswagen",
+      "model": "Polo",
+      "year": 2005,
+      "price": 4700,
+      "type": "petrol",
+      "mileage": 190000,
+      "description": "A compact German hatchback known for durability.",
+      "image": "/images/122.png"
+    },
+    {
+      "id": "123",
+      "brand": "Renault",
+      "model": "Kangoo",
+      "year": 2003,
+      "price": 4300,
+      "type": "diesel",
+      "mileage": 200000,
+      "description": "A practical and spacious French van.",
+      "image": "/images/123.png"
+    },
+    {
+      "id": "124",
+      "brand": "Mercedes-Benz",
+      "model": "A-Class",
+      "year": 2004,
+      "price": 5200,
+      "type": "petrol",
+      "mileage": 175000,
+      "description": "A German compact car with modern features.",
+      "image": "/images/124.png"
+    },
+    {
+      "id": "125",
+      "brand": "BMW",
+      "model": "1 Series",
+      "year": 2007,
+      "price": 7200,
+      "type": "petrol",
+      "mileage": 150000,
+      "description": "A sporty German hatchback with great handling.",
+      "image": "/images/125.png"
+    },
+    {
+      "id": "126",
+      "brand": "Peugeot",
+      "model": "106",
+      "year": 2001,
+      "price": 3000,
+      "type": "petrol",
+      "mileage": 200000,
+      "description": "An affordable French city car.",
+      "image": "/images/126.png"
+    },
+    {
+      "id": "127",
+      "brand": "Citroën",
+      "model": "C3",
+      "year": 2007,
+      "price": 4000,
+      "type": "petrol",
+      "mileage": 190000,
+      "description": "A compact and efficient French car.",
+      "image": "/images/127.png"
+    },
+    {
+      "id": "128",
+      "brand": "Audi",
+      "model": "TT",
+      "year": 2006,
+      "price": 15000,
+      "type": "petrol",
+      "mileage": 120000,
+      "description": "A stylish German sports car with outstanding performance.",
+      "image": "/images/128.png"
+    },
+    {
+      "id": "129",
+      "brand": "Volkswagen",
+      "model": "Sharan",
+      "year": 2009,
+      "price": 9000,
+      "type": "diesel",
+      "mileage": 180000,
+      "description": "A spacious German MPV with a reliable diesel engine.",
+      "image": "/images/129.png"
+    },
+    {
+      "id": "130",
+      "brand": "Renault",
+      "model": "Twingo",
+      "year": 2004,
+      "price": 2800,
+      "type": "petrol",
+      "mileage": 190000,
+      "description": "A small and affordable French city car.",
+      "image": "/images/130.png"
+    },
+    {
+      "id": "131",
+      "brand": "Mercedes-Benz",
+      "model": "CLK-Class",
+      "year": 2005,
+      "price": 9500,
+      "type": "petrol",
+      "mileage": 150000,
+      "description": "A stylish German coupe with smooth driving dynamics.",
+      "image": "/images/131.png"
+    },
+    {
+      "id": "132",
+      "brand": "Audi",
+      "model": "A6",
+      "year": 2007,
+      "price": 10500,
+      "type": "diesel",
+      "mileage": 165000,
+      "description": "A luxury German sedan with a strong diesel engine and spacious interior.",
+      "image": "/images/132.png"
+    },
+    {
+      "id": "133",
+      "brand": "Peugeot",
+      "model": "308",
+      "year": 2010,
+      "price": 7000,
+      "type": "petrol",
+      "mileage": 120000,
+      "description": "A reliable French compact car with modern features.",
+      "image": "/images/133.png"
+    },
+    {
+      "id": "134",
+      "brand": "Volkswagen",
+      "model": "Tiguan",
+      "year": 2009,
+      "price": 11000,
+      "type": "diesel",
+      "mileage": 145000,
+      "description": "A compact German SUV with exceptional road handling.",
+      "image": "/images/134.png"
+    },
+    {
+      "id": "135",
+      "brand": "Citroën",
+      "model": "Xsara Picasso",
+      "year": 2006,
+      "price": 4500,
+      "type": "diesel",
+      "mileage": 175000,
+      "description": "A spacious French family car with a reliable diesel engine.",
+      "image": "/images/135.png"
+    },
+    {
+      "id": "136",
+      "brand": "Renault",
+      "model": "Master",
+      "year": 2008,
+      "price": 8500,
+      "type": "diesel",
+      "mileage": 200000,
+      "description": "A durable French van designed for heavy use.",
+      "image": "/images/136.png"
+    },
+    {
+      "id": "137",
+      "brand": "BMW",
+      "model": "7 Series",
+      "year": 2009,
+      "price": 15000,
+      "type": "petrol",
+      "mileage": 140000,
+      "description": "A premium German sedan offering exceptional luxury and performance.",
+      "image": "/images/137.png"
+    },
+    {
+      "id": "138",
+      "brand": "Peugeot",
+      "model": "RCZ",
+      "year": 2010,
+      "price": 12000,
+      "type": "petrol",
+      "mileage": 110000,
+      "description": "A stylish French sports car with great driving dynamics.",
+      "image": "/images/138.png"
+    },
+    {
+      "id": "139",
+      "brand": "Audi",
+      "model": "Q5",
+      "year": 2010,
+      "price": 14000,
+      "type": "diesel",
+      "mileage": 130000,
+      "description": "A compact luxury SUV with exceptional build quality and performance.",
+      "image": "/images/139.png"
+    },
+    {
+      "id": "140",
+      "brand": "Volkswagen",
+      "model": "CC",
+      "year": 2008,
+      "price": 8500,
+      "type": "petrol",
+      "mileage": 125000,
+      "description": "A sleek German sedan with excellent fuel efficiency.",
+      "image": "/images/140.png"
+    },
+    {
+      "id": "141",
+      "brand": "Mercedes-Benz",
+      "model": "ML-Class",
+      "year": 2007,
+      "price": 12500,
+      "type": "diesel",
+      "mileage": 160000,
+      "description": "A robust German SUV designed for long journeys and off-road capabilities.",
+      "image": "/images/141.png"
+    },
+    {
+      "id": "142",
+      "brand": "Citroën",
+      "model": "DS3",
+      "year": 2010,
+      "price": 7500,
+      "type": "petrol",
+      "mileage": 110000,
+      "description": "A chic French hatchback with excellent driving comfort.",
+      "image": "/images/142.png"
+    },
+    {
+      "id": "143",
+      "brand": "Renault",
+      "model": "Trafic",
+      "year": 2009,
+      "price": 10500,
+      "type": "diesel",
+      "mileage": 190000,
+      "description": "A reliable and spacious French van perfect for transportation needs.",
+      "image": "/images/143.png"
+    },
+    {
+      "id": "144",
+      "brand": "BMW",
+      "model": "Z4",
+      "year": 2009,
+      "price": 17000,
+      "type": "petrol",
+      "mileage": 95000,
+      "description": "A sporty German roadster with a stylish design and excellent performance.",
+      "image": "/images/144.png"
+    },
+    {
+      "id": "145",
+      "brand": "Audi",
+      "model": "A1",
+      "year": 2010,
+      "price": 8500,
+      "type": "petrol",
+      "mileage": 105000,
+      "description": "A compact luxury hatchback with outstanding build quality.",
+      "image": "/images/145.png"
+    },
+    {
+      "id": "146",
+      "brand": "Volkswagen",
+      "model": "Jetta",
+      "year": 2006,
+      "price": 7000,
+      "type": "diesel",
+      "mileage": 180000,
+      "description": "A reliable German sedan with great fuel efficiency.",
+      "image": "/images/146.png"
+    },
+    {
+      "id": "147",
+      "brand": "Peugeot",
+      "model": "Partner",
+      "year": 2005,
+      "price": 6000,
+      "type": "diesel",
+      "mileage": 200000,
+      "description": "A practical French van ideal for business and family use.",
+      "image": "/images/147.png"
+    },
+    {
+      "id": "148",
+      "brand": "Mercedes-Benz",
+      "model": "E-Class Coupe",
+      "year": 2008,
+      "price": 12500,
+      "type": "petrol",
+      "mileage": 130000,
+      "description": "A sleek German coupe with premium features and performance.",
+      "image": "/images/148.png"
+    },
+    {
+      "id": "149",
+      "brand": "Renault",
+      "model": "Espace",
+      "year": 2009,
+      "price": 8500,
+      "type": "diesel",
+      "mileage": 180000,
+      "description": "A spacious French MPV with exceptional comfort for family trips.",
+      "image": "/images/149.png"
+    },
+    {
+      "id": "150",
+      "brand": "Audi",
+      "model": "R8",
+      "year": 2009,
+      "price": 75000,
+      "type": "petrol",
+      "mileage": 85000,
+      "description": "A high-performance German sports car with unparalleled engineering.",
+      "image": "/images/150.png"
+    }
+  ],
+  "cart": [
+    {
+      "id": "3eb8",
+      "carId": {
+        "id": "3",
+        "brand": "Ford",
+        "model": "Focus",
+        "year": 2019,
+        "price": 18000,
+        "description": "A compact car known for its excellent handling and modern design.",
+        "image": "/images/3.png"
+      }
+    },
+    {
+      "id": "d909",
+      "carId": {
+        "id": "3",
+        "brand": "Ford",
+        "model": "Focus",
+        "year": 2019,
+        "price": 18000,
+        "description": "A compact car known for its excellent handling and modern design.",
+        "image": "/images/3.png"
+      }
+    },
+    {
+      "id": "b93f",
+      "carId": {
+        "id": "1",
+        "brand": "Toyota",
+        "model": "Corolla",
+        "year": 2018,
+        "price": 15000,
+        "description": "A reliable compact sedan with excellent fuel efficiency and a comfortable interior.",
+        "image": "/images/1.png"
+      }
+    },
+    {
+      "id": "6ee6",
+      "carId": {
+        "id": "2",
+        "brand": "Honda",
+        "model": "Civic",
+        "year": 2020,
+        "price": 20000,
+        "description": "A stylish and sporty sedan with advanced technology and safety features.",
+        "image": "/images/2.png"
+      }
+    },
+    {
+      "id": "6566",
+      "carId": {
+        "id": "25",
+        "brand": "Mercedes-Benz",
+        "model": "E-Class",
+        "year": 2021,
+        "price": 52000,
+        "description": "A luxury sedan offering exceptional comfort and cutting-edge features.",
+        "image": "/images/25.png"
+      }
+    },
+    {
+      "id": "46af",
+      "carId": {
+        "id": "3",
+        "brand": "Ford",
+        "model": "Focus",
+        "year": 2019,
+        "price": 18000,
+        "description": "A compact car known for its excellent handling and modern design.",
+        "image": "/images/3.png"
+      }
+    },
+    {
+      "id": "1882",
+      "carId": {
+        "id": "2",
+        "brand": "Honda",
+        "model": "Civic",
+        "year": 2020,
+        "price": 20000,
+        "description": "A stylish and sporty sedan with advanced technology and safety features.",
+        "image": "/images/2.png"
+      }
+    },
+    {
+      "id": "6a90",
+      "carId": {
+        "id": "2",
+        "brand": "Honda",
+        "model": "Civic",
+        "year": 2020,
+        "price": 20000,
+        "description": "A stylish and sporty sedan with advanced technology and safety features.",
+        "image": "/images/2.png"
+      }
+    },
+    {
+      "id": "483e",
+      "carId": {
+        "id": "2",
+        "brand": "Honda",
+        "model": "Civic",
+        "year": 2020,
+        "price": 20000,
+        "description": "A stylish and sporty sedan with advanced technology and safety features.",
+        "image": "/images/2.png"
+      }
+    },
+    {
+      "id": "80fe",
+      "carId": {
+        "id": "102",
+        "brand": "Volkswagen",
+        "model": "Golf",
+        "year": 2007,
+        "price": 6000,
+        "type": "petrol",
+        "mileage": 145000,
+        "description": "A compact German petrol car known for its performance and durability.",
+        "image": "/images/102.png"
+      }
+    },
+    {
+      "id": "5f7d",
+      "carId": {
+        "id": "17",
+        "brand": "Infiniti",
+        "model": "Q50",
+        "year": 2020,
+        "price": 36000,
+        "description": "A luxury sedan with a sporty edge and a premium interior.",
+        "image": "/images/17.png"
+      }
+    },
+    {
+      "id": "30a3",
+      "carId": {
+        "id": "5",
+        "brand": "Nissan",
+        "model": "Altima",
+        "year": 2021,
+        "price": 22000,
+        "description": "A stylish sedan with advanced safety features and a spacious interior.",
+        "image": "/images/5.png"
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "user1",
+      "password": "password1"
+    },
+    {
+      "id": "2",
+      "username": "user2",
+      "password": "password2"
+    }
+  ],
+  "loggedInUser": [
+    {
+      "id": "1",
+      "username": "user1",
+      "password": "password1"
+    }
+  ]
 }

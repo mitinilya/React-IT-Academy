@@ -1,4 +1,4 @@
-export const fetchCars = () => async dispatch => {
+export const fetchCars = () => async (dispatch) => {
   dispatch({ type: 'FETCH_CARS_REQUEST' });
   try {
     const response = await fetch('http://localhost:5000/cars');
