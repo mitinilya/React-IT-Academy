@@ -1,3 +1,4 @@
+// carActions.js
 export const fetchCars = () => async (dispatch) => {
   dispatch({ type: 'FETCH_CARS_REQUEST' });
   try {

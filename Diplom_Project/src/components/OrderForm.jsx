@@ -8,7 +8,7 @@ const OrderForm = ({ cartItems }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Здесь можно отправить данные на сервер или обработать их.
+   //
     console.log({ name, address, phone, message, cartItems });
   };
 

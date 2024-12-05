@@ -6,6 +6,8 @@
       "model": "Corolla",
       "year": 2018,
       "price": 15000,
+      "type": "Дизель",
+      "mileage": 12,
       "description": "A reliable compact sedan with excellent fuel efficiency and a comfortable interior.",
       "image": "/images/1.png"
     },
@@ -15,6 +17,8 @@
       "model": "Civic",
       "year": 2020,
       "price": 20000,
+      "type": "Бензин",
+      "mileage": 14,
       "description": "A stylish and sporty sedan with advanced technology and safety features.",
       "image": "/images/2.png"
     },
@@ -22,6 +26,8 @@
       "id": "3",
       "brand": "Ford",
       "model": "Focus",
+      "type": "Бензин",
+      "mileage": 210000,
       "year": 2019,
       "price": 18000,
       "description": "A compact car known for its excellent handling and modern design.",
@@ -33,6 +39,8 @@
       "model": "Malibu",
       "year": 2017,
       "price": 16000,
+      "type": "Бензин",
+      "mileage": 15,
       "description": "A midsize sedan offering a smooth ride and impressive fuel economy.",
       "image": "/images/4.png"
     },
@@ -42,6 +50,8 @@
       "model": "Altima",
       "year": 2021,
       "price": 22000,
+      "type": "Бензин",
+      "mileage": 30,
       "description": "A stylish sedan with advanced safety features and a spacious interior.",
       "image": "/images/5.png"
     },
@@ -51,6 +61,8 @@
       "model": "Mazda3",
       "year": 2020,
       "price": 21000,
+      "type": "Бензин",
+      "mileage": 45,
       "description": "A sleek and sporty compact car with excellent driving dynamics.",
       "image": "/images/6.png"
     },
@@ -60,6 +72,8 @@
       "model": "Jetta",
       "year": 2019,
       "price": 19000,
+      "type": "Бензин",
+      "mileage": 65,
       "description": "A well-crafted sedan with modern technology and a premium feel.",
       "image": "/images/7.png"
     },
@@ -69,6 +83,8 @@
       "model": "Elantra",
       "year": 2021,
       "price": 21000,
+      "type": "Бензин",
+      "mileage": 22,
       "description": "A compact sedan with a striking design and advanced technology features.",
       "image": "/images/8.png"
     },
@@ -78,6 +94,8 @@
       "model": "Impreza",
       "year": 2020,
       "price": 20000,
+      "type": "Бензин",
+      "mileage": 45,
       "description": "A reliable car with all-wheel drive and a comfortable interior.",
       "image": "/images/9.png"
     },
@@ -87,6 +105,8 @@
       "model": "Optima",
       "year": 2018,
       "price": 17000,
+      "type": "Бензин",
+      "mileage": 78,
       "description": "A midsize sedan with a sleek design and plenty of modern features.",
       "image": "/images/10.png"
     },
@@ -96,6 +116,8 @@
       "model": "Model 3",
       "year": 2021,
       "price": 40000,
+      "type": "Электро",
+      "mileage": 90,
       "description": "A cutting-edge electric sedan with impressive performance and range.",
       "image": "/images/11.png"
     },
@@ -105,6 +127,8 @@
       "model": "3 Series",
       "year": 2019,
       "price": 35000,
+      "type": "Бензин",
+      "mileage": 77,
       "description": "A luxury sedan with sporty handling and advanced features.",
       "image": "/images/12.png"
     },
@@ -114,6 +138,8 @@
       "model": "C-Class",
       "year": 2018,
       "price": 34000,
+      "type": "Бензин",
+      "mileage": 19,
       "description": "A sophisticated and stylish luxury sedan with top-tier technology.",
       "image": "/images/13.png"
     },
@@ -123,6 +149,8 @@
       "model": "A4",
       "year": 2020,
       "price": 37000,
+      "type": "Бензин",
+      "mileage": 22,
       "description": "A premium sedan with excellent performance and advanced features.",
       "image": "/images/14.png"
     },
@@ -132,6 +160,8 @@
       "model": "ES",
       "year": 2021,
       "price": 42000,
+      "type": "Бензин",
+      "mileage": 94,
       "description": "A luxury sedan with a smooth ride and a refined interior.",
       "image": "/images/15.png"
     },
@@ -141,6 +171,8 @@
       "model": "TLX",
       "year": 2019,
       "price": 33000,
+      "type": "Бензин",
+      "mileage": 121,
       "description": "A sporty luxury sedan with sharp handling and modern features.",
       "image": "/images/16.png"
     },
@@ -150,6 +182,8 @@
       "model": "Q50",
       "year": 2020,
       "price": 36000,
+      "type": "Бензин",
+      "mileage": 101,
       "description": "A luxury sedan with a sporty edge and a premium interior.",
       "image": "/images/17.png"
     },
@@ -159,6 +193,8 @@
       "model": "ATS",
       "year": 2017,
       "price": 28000,
+      "type": "Бензин",
+      "mileage": 113,
       "description": "A compact luxury sedan with powerful performance and a refined cabin.",
       "image": "/images/18.png"
     },
@@ -168,6 +204,8 @@
       "model": "S60",
       "year": 2021,
       "price": 41000,
+      "type": "Бензин",
+      "mileage": 56,
       "description": "A premium sedan with a focus on safety and Scandinavian design.",
       "image": "/images/19.png"
     },
@@ -177,6 +215,8 @@
       "model": "XE",
       "year": 2020,
       "price": 45000,
+      "type": "Бензин",
+      "mileage": 118,
       "description": "A stylish and dynamic luxury sedan with British elegance.",
       "image": "/images/20.png"
     },
@@ -186,6 +226,8 @@
       "model": "Panamera",
       "year": 2021,
       "price": 95000,
+      "type": "Бензин",
+      "mileage": 64,
       "description": "A high-performance luxury sedan with sporty handling and premium features.",
       "image": "/images/21.png"
     },
@@ -195,6 +237,8 @@
       "model": "Camry",
       "year": 2019,
       "price": 23000,
+      "type": "Бензин",
+      "mileage": 222,
       "description": "A reliable midsize sedan with a strong reputation for quality.",
       "image": "/images/22.png"
     },
@@ -204,6 +248,8 @@
       "model": "5 Series",
       "year": 2020,
       "price": 45000,
+      "type": "Бензин",
+      "mileage": 166,
       "description": "A midsize luxury sedan with powerful engines and advanced technology.",
       "image": "/images/23.png"
     },
@@ -213,6 +259,8 @@
       "model": "A6",
       "year": 2019,
       "price": 48000,
+      "type": "Бензин",
+      "mileage": 152,
       "description": "A premium sedan with refined handling and a high-tech cabin.",
       "image": "/images/24.png"
     },
@@ -222,6 +270,8 @@
       "model": "E-Class",
       "year": 2021,
       "price": 52000,
+      "type": "Бензин",
+      "mileage": 132,
       "description": "A luxury sedan offering exceptional comfort and cutting-edge features.",
       "image": "/images/25.png"
     },
@@ -231,6 +281,8 @@
       "model": "Passat",
       "year": 2020,
       "price": 28000,
+      "type": "Бензин",
+      "mileage": 177,
       "description": "A practical and spacious sedan with excellent build quality.",
       "image": "/images/26.png"
     },
@@ -240,6 +292,8 @@
       "model": "Taycan",
       "year": 2021,
       "price": 105000,
+      "type": "Электро",
+      "mileage": 198,
       "description": "A high-performance electric sedan with unmatched driving dynamics.",
       "image": "/images/27.png"
     },
@@ -249,6 +303,8 @@
       "model": "7 Series",
       "year": 2020,
       "price": 86000,
+      "type": "Бензин",
+      "mileage": 109,
       "description": "A flagship luxury sedan offering advanced features and unparalleled comfort.",
       "image": "/images/28.png"
     },
@@ -258,6 +314,8 @@
       "model": "A8",
       "year": 2021,
       "price": 87000,
+      "type": "Бензин",
+      "mileage": 89,
       "description": "A luxurious full-size sedan with cutting-edge technology and a smooth ride.",
       "image": "/images/29.png"
     },
@@ -267,6 +325,8 @@
       "model": "S-Class",
       "year": 2021,
       "price": 110000,
+      "type": "Бензин",
+      "mileage": 234,
       "description": "A pinnacle of luxury and innovation in the sedan segment.",
       "image": "/images/30.png"
     },
@@ -276,6 +336,8 @@
       "model": "Arteon",
       "year": 2020,
       "price": 36000,
+      "type": "Бензин",
+      "mileage": 134,
       "description": "A stylish and upscale sedan with a roomy interior.",
       "image": "/images/31.png"
     },
@@ -285,6 +347,8 @@
       "model": "M5",
       "year": 2021,
       "price": 103000,
+      "type": "Бензин",
+      "mileage": 137,
       "description": "A high-performance sedan with incredible speed and handling.",
       "image": "/images/32.png"
     },
@@ -294,6 +358,8 @@
       "model": "RS7",
       "year": 2021,
       "price": 118000,
+      "type": "Бензин",
+      "mileage": 301,
       "description": "A sporty and luxurious sedan with breathtaking performance.",
       "image": "/images/33.png"
     },
@@ -303,6 +369,8 @@
       "model": "AMG GT 4-Door",
       "year": 2021,
       "price": 132000,
+      "type": "Бензин",
+      "mileage": 299,
       "description": "A four-door coupe blending sports car performance with everyday usability.",
       "image": "/images/34.png"
     },
@@ -312,6 +380,8 @@
       "model": "Panamera Turbo S",
       "year": 2021,
       "price": 180000,
+      "type": "Бензин",
+      "mileage": 302,
       "description": "An ultimate high-performance luxury sedan with astonishing power.",
       "image": "/images/35.png"
     },
@@ -321,6 +391,8 @@
       "model": "Golf R",
       "year": 2022,
       "price": 45000,
+      "type": "Бензин",
+      "mileage": 344,
       "description": "A sporty hatchback with excellent performance and practicality.",
       "image": "/images/36.png"
     },
@@ -330,6 +402,8 @@
       "model": "i4",
       "year": 2022,
       "price": 57000,
+      "type": "Электро",
+      "mileage": 131,
       "description": "An all-electric luxury sedan with sporty dynamics and a sleek design.",
       "image": "/images/37.png"
     },
@@ -339,6 +413,8 @@
       "model": "e-tron GT",
       "year": 2022,
       "price": 99000,
+      "type": "Электро",
+      "mileage": 222,
       "description": "A premium electric sedan with breathtaking performance and luxury.",
       "image": "/images/38.png"
     },
@@ -348,6 +424,8 @@
       "model": "EQE",
       "year": 2022,
       "price": 70000,
+      "type": "Электро",
+      "mileage": 309,
       "description": "An electric luxury sedan offering cutting-edge technology and a smooth ride.",
       "image": "/images/39.png"
     },
@@ -357,6 +435,8 @@
       "model": "911 Carrera",
       "year": 2021,
       "price": 100000,
+      "type": "Бензин",
+      "mileage": 106,
       "description": "A legendary sports car offering unmatched driving pleasure.",
       "image": "/images/40.png"
     },
@@ -366,6 +446,8 @@
       "model": "Tiguan",
       "year": 2021,
       "price": 26000,
+      "type": "Бензин",
+      "mileage": 111,
       "description": "A compact SUV with versatile space and excellent build quality.",
       "image": "/images/41.png"
     },
@@ -375,6 +457,8 @@
       "model": "X3",
       "year": 2021,
       "price": 43000,
+      "type": "Бензин",
+      "mileage": 127,
       "description": "A luxury compact SUV offering dynamic performance and premium features.",
       "image": "/images/42.png"
     },
@@ -384,6 +468,8 @@
       "model": "Q5",
       "year": 2021,
       "price": 45000,
+      "type": "Бензин",
+      "mileage": 288,
       "description": "A luxury compact SUV with a refined interior and advanced features.",
       "image": "/images/43.png"
     },
@@ -393,6 +479,8 @@
       "model": "GLC",
       "year": 2021,
       "price": 48000,
+      "type": "Бензин",
+      "mileage": 236,
       "description": "A premium compact SUV with a smooth ride and modern technology.",
       "image": "/images/44.png"
     },
@@ -402,6 +490,8 @@
       "model": "Macan",
       "year": 2021,
       "price": 58000,
+      "type": "Бензин",
+      "mileage": 178,
       "description": "A sporty compact SUV with luxurious features and thrilling performance.",
       "image": "/images/45.png"
     },
@@ -411,6 +501,8 @@
       "model": "X5",
       "year": 2021,
       "price": 61000,
+      "type": "Бензин",
+      "mileage": 198,
       "description": "A midsize luxury SUV with excellent performance and a spacious interior.",
       "image": "/images/46.png"
     },
@@ -420,6 +512,8 @@
       "model": "Q7",
       "year": 2021,
       "price": 65000,
+      "type": "Бензин",
+      "mileage": 7,
       "description": "A luxury midsize SUV with three rows of seating and advanced tech.",
       "image": "/images/47.png"
     },
@@ -429,6 +523,8 @@
       "model": "GLE",
       "year": 2021,
       "price": 69000,
+      "type": "Бензин",
+      "mileage": 39,
       "description": "A premium SUV offering luxury, technology, and off-road capability.",
       "image": "/images/48.png"
     },
@@ -438,6 +534,8 @@
       "model": "Cayenne",
       "year": 2021,
       "price": 77000,
+      "type": "Бензин",
+      "mileage": 27,
       "description": "A high-performance luxury SUV with sporty handling and premium features.",
       "image": "/images/49.png"
     },
@@ -447,6 +545,8 @@
       "model": "iX",
       "year": 2022,
       "price": 84000,
+      "type": "Электро",
+      "mileage": 34,
       "description": "A futuristic electric SUV with luxurious features and advanced tech.",
       "image": "/images/50.png"
     },
@@ -456,6 +556,8 @@
       "model": "Q8",
       "year": 2022,
       "price": 78000,
+      "type": "Бензин",
+      "mileage": 61,
       "description": "A luxurious coupe-style SUV with stunning design and performance.",
       "image": "/images/51.png"
     },
@@ -465,6 +567,8 @@
       "model": "GLS",
       "year": 2022,
       "price": 92000,
+      "type": "Бензин",
+      "mileage": 90,
       "description": "A full-size luxury SUV offering exceptional comfort and technology.",
       "image": "/images/52.png"
     },
@@ -474,6 +578,8 @@
       "model": "911 Turbo",
       "year": 2022,
       "price": 170000,
+      "type": "Бензин",
+      "mileage": 55,
       "description": "A high-performance sports car with blistering speed and handling.",
       "image": "/images/53.png"
     },
@@ -483,6 +589,8 @@
       "model": "M8 Gran Coupe",
       "year": 2022,
       "price": 130000,
+      "type": "Бензин",
+      "mileage": 19,
       "description": "A luxury high-performance sedan with stunning design and dynamics.",
       "image": "/images/54.png"
     },
@@ -492,6 +600,8 @@
       "model": "RS Q8",
       "year": 2022,
       "price": 120000,
+      "type": "Бензин",
+      "mileage": 39,
       "description": "A high-performance luxury SUV with breathtaking speed and style.",
       "image": "/images/55.png"
     },
@@ -501,6 +611,8 @@
       "model": "Clio",
       "year": 2021,
       "price": 16000,
+      "type": "Бензин",
+      "mileage": 62,
       "description": "A compact hatchback with efficient engines and a stylish design.",
       "image": "/images/56.png"
     },
@@ -510,6 +622,8 @@
       "model": "208",
       "year": 2021,
       "price": 17000,
+      "type": "Бензин",
+      "mileage": 81,
       "description": "A modern compact car with advanced technology and a comfortable interior.",
       "image": "/images/57.png"
     },
@@ -519,6 +633,8 @@
       "model": "C3",
       "year": 2020,
       "price": 15000,
+      "type": "Бензин",
+      "mileage": 1221,
       "description": "A stylish and versatile small car with a comfortable ride.",
       "image": "/images/58.png"
     },
@@ -528,6 +644,8 @@
       "model": "Silverado",
       "year": 2021,
       "price": 35000,
+      "type": "Бензин",
+      "mileage": 489,
       "description": "A powerful and capable full-size pickup truck.",
       "image": "/images/59.png"
     },
@@ -537,6 +655,8 @@
       "model": "Mustang",
       "year": 2022,
       "price": 55000,
+      "type": "Бензин",
+      "mileage": 325,
       "description": "An iconic American sports car with thrilling performance.",
       "image": "/images/60.png"
     },
@@ -546,6 +666,8 @@
       "model": "Charger",
       "year": 2021,
       "price": 48000,
+      "type": "Бензин",
+      "mileage": 490,
       "description": "A powerful muscle car with a bold design.",
       "image": "/images/61.png"
     },
@@ -555,6 +677,8 @@
       "model": "Vesta",
       "year": 2021,
       "price": 12000,
+      "type": "Бензин",
+      "mileage": 299,
       "description": "A popular Russian sedan offering affordability and practicality.",
       "image": "/images/62.png"
     },
@@ -564,6 +688,8 @@
       "model": "Granta",
       "year": 2020,
       "price": 9000,
+      "type": "Бензин",
+      "mileage": 5656,
       "description": "A budget-friendly compact car with a focus on simplicity.",
       "image": "/images/63.png"
     },
@@ -573,6 +699,8 @@
       "model": "500",
       "year": 2021,
       "price": 18000,
+      "type": "Бензин",
+      "mileage": 788,
       "description": "A compact city car with an iconic Italian design.",
       "image": "/images/64.png"
     },
@@ -582,6 +710,8 @@
       "model": "Giulia",
       "year": 2021,
       "price": 42000,
+      "type": "Бензин",
+      "mileage": 456,
       "description": "A luxury sports sedan with Italian flair and performance.",
       "image": "/images/65.png"
     },
@@ -591,6 +721,8 @@
       "model": "Portofino",
       "year": 2022,
       "price": 220000,
+      "type": "Бензин",
+      "mileage": 1530,
       "description": "A luxurious convertible sports car with breathtaking performance.",
       "image": "/images/66.png"
     },
@@ -600,6 +732,8 @@
       "model": "Huracan",
       "year": 2022,
       "price": 300000,
+      "type": "Бензин",
+      "mileage": 3421,
       "description": "A high-performance supercar with cutting-edge design and power.",
       "image": "/images/67.png"
     },
@@ -609,6 +743,8 @@
       "model": "Camaro",
       "year": 2022,
       "price": 45000,
+      "type": "Бензин",
+      "mileage": 341,
       "description": "A bold and powerful muscle car with advanced technology.",
       "image": "/images/68.png"
     },
@@ -618,6 +754,8 @@
       "model": "300",
       "year": 2021,
       "price": 40000,
+      "type": "Бензин",
+      "mileage": 6565,
       "description": "A full-size American sedan with a spacious interior and a smooth ride.",
       "image": "/images/69.png"
     },
@@ -627,6 +765,8 @@
       "model": "Kadjar",
       "year": 2021,
       "price": 24000,
+      "type": "Бензин",
+      "mileage": 1121,
       "description": "A compact SUV with a comfortable interior and efficient engines.",
       "image": "/images/70.png"
     },
@@ -636,6 +776,8 @@
       "model": "3008",
       "year": 2021,
       "price": 28000,
+      "type": "Бензин",
+      "mileage": 681,
       "description": "A stylish and modern compact SUV with advanced features.",
       "image": "/images/71.png"
     },
@@ -645,6 +787,8 @@
       "model": "C5 Aircross",
       "year": 2021,
       "price": 27000,
+      "type": "Бензин",
+      "mileage": 639,
       "description": "A comfortable SUV with innovative suspension technology.",
       "image": "/images/72.png"
     },
@@ -654,6 +798,8 @@
       "model": "Wrangler",
       "year": 2021,
       "price": 42000,
+      "type": "Бензин",
+      "mileage": 170,
       "description": "A rugged SUV with exceptional off-road capabilities.",
       "image": "/images/73.png"
     },
@@ -663,6 +809,8 @@
       "model": "Durango",
       "year": 2021,
       "price": 39000,
+      "type": "Бензин",
+      "mileage": 374,
       "description": "A versatile SUV with powerful engine options and three rows of seating.",
       "image": "/images/74.png"
     },
@@ -672,6 +820,8 @@
       "model": "Patriot",
       "year": 2021,
       "price": 15000,
+      "type": "Бензин",
+      "mileage": 412,
       "description": "A rugged Russian SUV with off-road capabilities and durability.",
       "image": "/images/75.png"
     },
@@ -681,6 +831,8 @@
       "model": "Niva Legend",
       "year": 2021,
       "price": 12000,
+      "type": "Бензин",
+      "mileage": 9000,
       "description": "A classic off-road vehicle with a loyal following.",
       "image": "/images/76.png"
     },
@@ -690,6 +842,8 @@
       "model": "Ghibli",
       "year": 2021,
       "price": 72000,
+      "type": "Бензин",
+      "mileage": 6723,
       "description": "A luxury Italian sedan with a sporty edge.",
       "image": "/images/77.png"
     },
@@ -699,6 +853,8 @@
       "model": "Panda",
       "year": 2021,
       "price": 13000,
+      "type": "Бензин",
+      "mileage": 789,
       "description": "A practical and economical city car.",
       "image": "/images/78.png"
     },
@@ -708,6 +864,8 @@
       "model": "Duster",
       "year": 2021,
       "price": 20000,
+      "type": "Бензин",
+      "mileage": 1200,
       "description": "A budget-friendly compact SUV with great off-road capabilities.",
       "image": "/images/79.png"
     },
@@ -717,6 +875,8 @@
       "model": "Explorer",
       "year": 2021,
       "price": 50000,
+      "type": "Бензин",
+      "mileage": 5600,
       "description": "A family SUV with ample space and advanced safety features.",
       "image": "/images/80.png"
     },
@@ -726,6 +886,8 @@
       "model": "Tahoe",
       "year": 2021,
       "price": 60000,
+      "type": "Бензин",
+      "mileage": 10000,
       "description": "A large and capable SUV with impressive towing capacity.",
       "image": "/images/81.png"
     },
@@ -735,6 +897,8 @@
       "model": "Urus",
       "year": 2022,
       "price": 220000,
+      "type": "Бензин",
+      "mileage": 500,
       "description": "A luxury high-performance SUV with incredible speed and agility.",
       "image": "/images/82.png"
     },
@@ -744,6 +908,8 @@
       "model": "Roma",
       "year": 2022,
       "price": 250000,
+      "type": "Бензин",
+      "mileage": 300,
       "description": "A grand touring sports car with stunning design and performance.",
       "image": "/images/83.png"
     },
@@ -753,6 +919,8 @@
       "model": "Stelvio",
       "year": 2021,
       "price": 52000,
+      "type": "Бензин",
+      "mileage": 220,
       "description": "A sporty Italian SUV with dynamic handling and premium features.",
       "image": "/images/84.png"
     },
@@ -762,6 +930,8 @@
       "model": "Grand Cherokee",
       "year": 2021,
       "price": 46000,
+      "type": "Бензин",
+      "mileage": 125,
       "description": "A capable midsize SUV with luxury and off-road capabilities.",
       "image": "/images/85.png"
     },
@@ -771,6 +941,8 @@
       "model": "Levante",
       "year": 2021,
       "price": 78000,
+      "type": "Бензин",
+      "mileage": 70000,
       "description": "A luxury Italian SUV with sporty performance.",
       "image": "/images/86.png"
     },
@@ -780,6 +952,8 @@
       "model": "Berlingo",
       "year": 2021,
       "price": 25000,
+      "type": "Бензин",
+      "mileage": 35000,
       "description": "A practical MPV with plenty of space for families.",
       "image": "/images/87.png"
     },
@@ -789,6 +963,8 @@
       "model": "Bronco",
       "year": 2022,
       "price": 43000,
+      "type": "Бензин",
+      "mileage": 9000,
       "description": "A rugged SUV designed for adventure and off-road challenges.",
       "image": "/images/88.png"
     },
@@ -798,6 +974,8 @@
       "model": "Talisman",
       "year": 2021,
       "price": 32000,
+      "type": "Бензин",
+      "mileage": 3200,
       "description": "A stylish midsize sedan with premium comfort and features.",
       "image": "/images/89.png"
     },
@@ -807,6 +985,8 @@
       "model": "XRay",
       "year": 2021,
       "price": 14000,
+      "type": "Бензин",
+      "mileage": 10000,
       "description": "A compact crossover with a bold design and affordable price.",
       "image": "/images/90.png"
     },
@@ -816,6 +996,8 @@
       "model": "Trailblazer",
       "year": 2021,
       "price": 23000,
+      "type": "Бензин",
+      "mileage": 7300,
       "description": "A compact SUV with a stylish design and practical features.",
       "image": "/images/91.png"
     },
@@ -825,6 +1007,8 @@
       "model": "508",
       "year": 2021,
       "price": 35000,
+      "type": "Бензин",
+      "mileage": 15000,
       "description": "A sleek and modern midsize sedan with advanced technology.",
       "image": "/images/92.png"
     },
@@ -834,6 +1018,8 @@
       "model": "Compass",
       "year": 2021,
       "price": 32000,
+      "type": "Бензин",
+      "mileage": 207,
       "description": "A compact SUV with a comfortable interior and off-road capabilities.",
       "image": "/images/93.png"
     },
@@ -843,6 +1029,8 @@
       "model": "Tonale",
       "year": 2022,
       "price": 36000,
+      "type": "Бензин",
+      "mileage": 5600,
       "description": "A compact luxury SUV with Italian design and driving dynamics.",
       "image": "/images/94.png"
     },
@@ -852,6 +1040,8 @@
       "model": "Ranger",
       "year": 2022,
       "price": 34000,
+      "type": "Бензин",
+      "mileage": 33300,
       "description": "A versatile midsize pickup truck with rugged capabilities.",
       "image": "/images/95.png"
     },
@@ -861,6 +1051,8 @@
       "model": "Tipo",
       "year": 2021,
       "price": 19000,
+      "type": "Бензин",
+      "mileage": 21010,
       "description": "A practical and budget-friendly compact sedan.",
       "image": "/images/96.png"
     },
@@ -870,6 +1062,8 @@
       "model": "C4",
       "year": 2021,
       "price": 22000,
+      "type": "Бензин",
+      "mileage": 23200,
       "description": "A modern compact car with a bold design.",
       "image": "/images/97.png"
     },
@@ -879,6 +1073,8 @@
       "model": "Sandero",
       "year": 2021,
       "price": 11000,
+      "type": "Бензин",
+      "mileage": 31250,
       "description": "A budget-friendly hatchback with practical features.",
       "image": "/images/98.png"
     },
@@ -888,6 +1084,8 @@
       "model": "SF90 Stradale",
       "year": 2022,
       "price": 500000,
+      "type": "Бензин",
+      "mileage": 11200,
       "description": "A hybrid hypercar offering extreme performance and cutting-edge technology.",
       "image": "/images/99.png"
     },
@@ -897,6 +1095,8 @@
       "model": "Zoe",
       "year": 2021,
       "price": 33000,
+      "type": "Электро",
+      "mileage": 232200,
       "description": "A popular electric car with a modern design and efficient performance.",
       "image": "/images/100.png"
     },
@@ -906,7 +1106,7 @@
       "model": "307",
       "year": 2005,
       "price": 4500,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 170000,
       "description": "A reliable French diesel car with great fuel efficiency.",
       "image": "/images/101.png"
@@ -917,9 +1117,9 @@
       "model": "Golf",
       "year": 2007,
       "price": 6000,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 145000,
-      "description": "A compact German petrol car known for its performance and durability.",
+      "description": "A compact German Бензин car known for its performance and durability.",
       "image": "/images/102.png"
     },
     {
@@ -928,7 +1128,7 @@
       "model": "Clio",
       "year": 2008,
       "price": 5000,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 160000,
       "description": "A small and economical diesel car, perfect for city driving.",
       "image": "/images/103.png"
@@ -939,7 +1139,7 @@
       "model": "3 Series",
       "year": 2004,
       "price": 7500,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 180000,
       "description": "A luxury German car with excellent driving dynamics.",
       "image": "/images/104.png"
@@ -950,7 +1150,7 @@
       "model": "C5",
       "year": 2006,
       "price": 5500,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 155000,
       "description": "A spacious and comfortable French car with a powerful diesel engine.",
       "image": "/images/105.png"
@@ -961,7 +1161,7 @@
       "model": "A4",
       "year": 2009,
       "price": 9500,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 140000,
       "description": "A premium German sedan with great performance and reliability.",
       "image": "/images/106.png"
@@ -972,7 +1172,7 @@
       "model": "Laguna",
       "year": 2005,
       "price": 4000,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 180000,
       "description": "A practical French car with efficient fuel consumption.",
       "image": "/images/107.png"
@@ -983,7 +1183,7 @@
       "model": "206",
       "year": 2003,
       "price": 3000,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 200000,
       "description": "A compact French petrol car with low maintenance costs.",
       "image": "/images/108.png"
@@ -994,7 +1194,7 @@
       "model": "E-Class",
       "year": 2002,
       "price": 8500,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 190000,
       "description": "A luxury German sedan with an impressive diesel engine.",
       "image": "/images/109.png"
@@ -1005,7 +1205,7 @@
       "model": "Passat",
       "year": 2006,
       "price": 6500,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 175000,
       "description": "A versatile and reliable German diesel car.",
       "image": "/images/110.png"
@@ -1016,7 +1216,7 @@
       "model": "A3",
       "year": 2008,
       "price": 7000,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 130000,
       "description": "A compact premium car from Audi with a sporty petrol engine.",
       "image": "/images/111.png"
@@ -1027,7 +1227,7 @@
       "model": "Berlingo",
       "year": 2001,
       "price": 3500,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 210000,
       "description": "A reliable and spacious French van with a durable diesel engine.",
       "image": "/images/112.png"
@@ -1038,7 +1238,7 @@
       "model": "5 Series",
       "year": 2007,
       "price": 10500,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 160000,
       "description": "A luxury executive car with unmatched driving comfort.",
       "image": "/images/113.png"
@@ -1049,7 +1249,7 @@
       "model": "Touran",
       "year": 2005,
       "price": 5800,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 185000,
       "description": "A compact German MPV with excellent fuel efficiency.",
       "image": "/images/114.png"
@@ -1060,7 +1260,7 @@
       "model": "508",
       "year": 2010,
       "price": 8500,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 150000,
       "description": "A comfortable French sedan with modern features and great mileage.",
       "image": "/images/115.png"
@@ -1071,7 +1271,7 @@
       "model": "Q7",
       "year": 2009,
       "price": 11000,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 180000,
       "description": "A premium German SUV with spacious interiors and powerful performance.",
       "image": "/images/116.png"
@@ -1082,7 +1282,7 @@
       "model": "Scenic",
       "year": 2008,
       "price": 5500,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 170000,
       "description": "A practical French MPV ideal for family travel.",
       "image": "/images/117.png"
@@ -1093,7 +1293,7 @@
       "model": "X3",
       "year": 2009,
       "price": 12000,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 160000,
       "description": "A compact German SUV with excellent road handling.",
       "image": "/images/118.png"
@@ -1104,7 +1304,7 @@
       "model": "C-Class",
       "year": 2008,
       "price": 9500,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 140000,
       "description": "A German luxury car offering smooth rides and top-notch features.",
       "image": "/images/119.png"
@@ -1115,7 +1315,7 @@
       "model": "C4",
       "year": 2006,
       "price": 5200,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 165000,
       "description": "A stylish French hatchback with good fuel efficiency.",
       "image": "/images/120.png"
@@ -1126,7 +1326,7 @@
       "model": "307 SW",
       "year": 2007,
       "price": 6000,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 170000,
       "description": "A spacious French estate car with reliable performance.",
       "image": "/images/121.png"
@@ -1137,7 +1337,7 @@
       "model": "Polo",
       "year": 2005,
       "price": 4700,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 190000,
       "description": "A compact German hatchback known for durability.",
       "image": "/images/122.png"
@@ -1148,7 +1348,7 @@
       "model": "Kangoo",
       "year": 2003,
       "price": 4300,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 200000,
       "description": "A practical and spacious French van.",
       "image": "/images/123.png"
@@ -1159,7 +1359,7 @@
       "model": "A-Class",
       "year": 2004,
       "price": 5200,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 175000,
       "description": "A German compact car with modern features.",
       "image": "/images/124.png"
@@ -1170,7 +1370,7 @@
       "model": "1 Series",
       "year": 2007,
       "price": 7200,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 150000,
       "description": "A sporty German hatchback with great handling.",
       "image": "/images/125.png"
@@ -1181,7 +1381,7 @@
       "model": "106",
       "year": 2001,
       "price": 3000,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 200000,
       "description": "An affordable French city car.",
       "image": "/images/126.png"
@@ -1192,7 +1392,7 @@
       "model": "C3",
       "year": 2007,
       "price": 4000,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 190000,
       "description": "A compact and efficient French car.",
       "image": "/images/127.png"
@@ -1203,7 +1403,7 @@
       "model": "TT",
       "year": 2006,
       "price": 15000,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 120000,
       "description": "A stylish German sports car with outstanding performance.",
       "image": "/images/128.png"
@@ -1214,7 +1414,7 @@
       "model": "Sharan",
       "year": 2009,
       "price": 9000,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 180000,
       "description": "A spacious German MPV with a reliable diesel engine.",
       "image": "/images/129.png"
@@ -1225,7 +1425,7 @@
       "model": "Twingo",
       "year": 2004,
       "price": 2800,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 190000,
       "description": "A small and affordable French city car.",
       "image": "/images/130.png"
@@ -1236,7 +1436,7 @@
       "model": "CLK-Class",
       "year": 2005,
       "price": 9500,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 150000,
       "description": "A stylish German coupe with smooth driving dynamics.",
       "image": "/images/131.png"
@@ -1247,7 +1447,7 @@
       "model": "A6",
       "year": 2007,
       "price": 10500,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 165000,
       "description": "A luxury German sedan with a strong diesel engine and spacious interior.",
       "image": "/images/132.png"
@@ -1258,7 +1458,7 @@
       "model": "308",
       "year": 2010,
       "price": 7000,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 120000,
       "description": "A reliable French compact car with modern features.",
       "image": "/images/133.png"
@@ -1269,7 +1469,7 @@
       "model": "Tiguan",
       "year": 2009,
       "price": 11000,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 145000,
       "description": "A compact German SUV with exceptional road handling.",
       "image": "/images/134.png"
@@ -1280,7 +1480,7 @@
       "model": "Xsara Picasso",
       "year": 2006,
       "price": 4500,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 175000,
       "description": "A spacious French family car with a reliable diesel engine.",
       "image": "/images/135.png"
@@ -1291,7 +1491,7 @@
       "model": "Master",
       "year": 2008,
       "price": 8500,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 200000,
       "description": "A durable French van designed for heavy use.",
       "image": "/images/136.png"
@@ -1302,7 +1502,7 @@
       "model": "7 Series",
       "year": 2009,
       "price": 15000,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 140000,
       "description": "A premium German sedan offering exceptional luxury and performance.",
       "image": "/images/137.png"
@@ -1313,7 +1513,7 @@
       "model": "RCZ",
       "year": 2010,
       "price": 12000,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 110000,
       "description": "A stylish French sports car with great driving dynamics.",
       "image": "/images/138.png"
@@ -1324,7 +1524,7 @@
       "model": "Q5",
       "year": 2010,
       "price": 14000,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 130000,
       "description": "A compact luxury SUV with exceptional build quality and performance.",
       "image": "/images/139.png"
@@ -1335,7 +1535,7 @@
       "model": "CC",
       "year": 2008,
       "price": 8500,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 125000,
       "description": "A sleek German sedan with excellent fuel efficiency.",
       "image": "/images/140.png"
@@ -1346,7 +1546,7 @@
       "model": "ML-Class",
       "year": 2007,
       "price": 12500,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 160000,
       "description": "A robust German SUV designed for long journeys and off-road capabilities.",
       "image": "/images/141.png"
@@ -1357,7 +1557,7 @@
       "model": "DS3",
       "year": 2010,
       "price": 7500,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 110000,
       "description": "A chic French hatchback with excellent driving comfort.",
       "image": "/images/142.png"
@@ -1368,7 +1568,7 @@
       "model": "Trafic",
       "year": 2009,
       "price": 10500,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 190000,
       "description": "A reliable and spacious French van perfect for transportation needs.",
       "image": "/images/143.png"
@@ -1379,7 +1579,7 @@
       "model": "Z4",
       "year": 2009,
       "price": 17000,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 95000,
       "description": "A sporty German roadster with a stylish design and excellent performance.",
       "image": "/images/144.png"
@@ -1390,7 +1590,7 @@
       "model": "A1",
       "year": 2010,
       "price": 8500,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 105000,
       "description": "A compact luxury hatchback with outstanding build quality.",
       "image": "/images/145.png"
@@ -1401,7 +1601,7 @@
       "model": "Jetta",
       "year": 2006,
       "price": 7000,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 180000,
       "description": "A reliable German sedan with great fuel efficiency.",
       "image": "/images/146.png"
@@ -1412,7 +1612,7 @@
       "model": "Partner",
       "year": 2005,
       "price": 6000,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 200000,
       "description": "A practical French van ideal for business and family use.",
       "image": "/images/147.png"
@@ -1423,7 +1623,7 @@
       "model": "E-Class Coupe",
       "year": 2008,
       "price": 12500,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 130000,
       "description": "A sleek German coupe with premium features and performance.",
       "image": "/images/148.png"
@@ -1434,7 +1634,7 @@
       "model": "Espace",
       "year": 2009,
       "price": 8500,
-      "type": "diesel",
+      "type": "Дизель",
       "mileage": 180000,
       "description": "A spacious French MPV with exceptional comfort for family trips.",
       "image": "/images/149.png"
@@ -1445,177 +1645,45 @@
       "model": "R8",
       "year": 2009,
       "price": 75000,
-      "type": "petrol",
+      "type": "Бензин",
       "mileage": 85000,
       "description": "A high-performance German sports car with unparalleled engineering.",
       "image": "/images/150.png"
     }
   ],
-  "cart": [
-    {
-      "id": "3eb8",
-      "carId": {
-        "id": "3",
-        "brand": "Ford",
-        "model": "Focus",
-        "year": 2019,
-        "price": 18000,
-        "description": "A compact car known for its excellent handling and modern design.",
-        "image": "/images/3.png"
-      }
-    },
-    {
-      "id": "d909",
-      "carId": {
-        "id": "3",
-        "brand": "Ford",
-        "model": "Focus",
-        "year": 2019,
-        "price": 18000,
-        "description": "A compact car known for its excellent handling and modern design.",
-        "image": "/images/3.png"
-      }
-    },
-    {
-      "id": "b93f",
-      "carId": {
-        "id": "1",
-        "brand": "Toyota",
-        "model": "Corolla",
-        "year": 2018,
-        "price": 15000,
-        "description": "A reliable compact sedan with excellent fuel efficiency and a comfortable interior.",
-        "image": "/images/1.png"
-      }
-    },
-    {
-      "id": "6ee6",
-      "carId": {
-        "id": "2",
-        "brand": "Honda",
-        "model": "Civic",
-        "year": 2020,
-        "price": 20000,
-        "description": "A stylish and sporty sedan with advanced technology and safety features.",
-        "image": "/images/2.png"
-      }
-    },
-    {
-      "id": "6566",
-      "carId": {
-        "id": "25",
-        "brand": "Mercedes-Benz",
-        "model": "E-Class",
-        "year": 2021,
-        "price": 52000,
-        "description": "A luxury sedan offering exceptional comfort and cutting-edge features.",
-        "image": "/images/25.png"
-      }
-    },
-    {
-      "id": "46af",
-      "carId": {
-        "id": "3",
-        "brand": "Ford",
-        "model": "Focus",
-        "year": 2019,
-        "price": 18000,
-        "description": "A compact car known for its excellent handling and modern design.",
-        "image": "/images/3.png"
-      }
-    },
-    {
-      "id": "1882",
-      "carId": {
-        "id": "2",
-        "brand": "Honda",
-        "model": "Civic",
-        "year": 2020,
-        "price": 20000,
-        "description": "A stylish and sporty sedan with advanced technology and safety features.",
-        "image": "/images/2.png"
-      }
-    },
-    {
-      "id": "6a90",
-      "carId": {
-        "id": "2",
-        "brand": "Honda",
-        "model": "Civic",
-        "year": 2020,
-        "price": 20000,
-        "description": "A stylish and sporty sedan with advanced technology and safety features.",
-        "image": "/images/2.png"
-      }
-    },
-    {
-      "id": "483e",
-      "carId": {
-        "id": "2",
-        "brand": "Honda",
-        "model": "Civic",
-        "year": 2020,
-        "price": 20000,
-        "description": "A stylish and sporty sedan with advanced technology and safety features.",
-        "image": "/images/2.png"
-      }
-    },
-    {
-      "id": "80fe",
-      "carId": {
-        "id": "102",
-        "brand": "Volkswagen",
-        "model": "Golf",
-        "year": 2007,
-        "price": 6000,
-        "type": "petrol",
-        "mileage": 145000,
-        "description": "A compact German petrol car known for its performance and durability.",
-        "image": "/images/102.png"
-      }
-    },
-    {
-      "id": "5f7d",
-      "carId": {
-        "id": "17",
-        "brand": "Infiniti",
-        "model": "Q50",
-        "year": 2020,
-        "price": 36000,
-        "description": "A luxury sedan with a sporty edge and a premium interior.",
-        "image": "/images/17.png"
-      }
-    },
-    {
-      "id": "30a3",
-      "carId": {
-        "id": "5",
-        "brand": "Nissan",
-        "model": "Altima",
-        "year": 2021,
-        "price": 22000,
-        "description": "A stylish sedan with advanced safety features and a spacious interior.",
-        "image": "/images/5.png"
-      }
-    }
-  ],
+  "cart": [],
   "users": [
     {
       "id": "1",
       "username": "user1",
-      "password": "password1"
+      "password": "password1",
+      "cart": []
     },
     {
       "id": "2",
       "username": "user2",
-      "password": "password2"
+      "password": "password2",
+      "cart": [
+        {
+          "id": "5",
+          "brand": "Nissan",
+          "model": "Altima",
+          "year": 2021,
+          "price": 22000,
+          "type": "petrol",
+          "mileage": 30,
+          "description": "A stylish sedan with advanced safety features and a spacious interior.",
+          "image": "/images/5.png"
+        }
+      ]
     }
   ],
   "loggedInUser": [
     {
       "id": "1",
       "username": "user1",
-      "password": "password1"
+      "password": "password1",
+      "cart": []
     }
   ]
 }

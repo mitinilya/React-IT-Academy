@@ -14,17 +14,18 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-logo">
-        <Link to="/">Used Cars Store</Link>
+        <Link to="/">AUTO.BY</Link>
       </div>
       <div className="header-actions">
-        <Link to="/cart">Cart</Link>
         {user ? (
           <>
+            <Link to="/cart">Избранное</Link>
+            <span>   </span>
             <span>{user.username}</span>
-            <button onClick={handleLogout}>Logout</button>
+            <button onClick={handleLogout}>Выйти из профиля</button>
           </>
         ) : (
-          <Link to="/login">Login</Link>
+          <Link to="/login">Вход</Link>
         )}
       </div>
     </header>
