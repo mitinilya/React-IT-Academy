@@ -1,5 +1,3 @@
-// src/pages/LoginPage.jsx
-
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -10,7 +8,7 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const error = useSelector((state) => state.auth.error);  // Получаем ошибку из state
+  const error = useSelector((state) => state.auth.error);  
   const user = useSelector((state) => state.auth.user);
 
   useEffect(() => {

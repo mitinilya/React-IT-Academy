@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom'; // Добавлен useLocation
+import { Link, useNavigate, useLocation } from 'react-router-dom'; 
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../redux/actions/authActions';
 import { IconButton, Menu, MenuItem } from '@mui/material';
@@ -7,10 +7,10 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Header = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate(); // Хук для навигации
-  const location = useLocation(); // Хук для получения текущего URL
+  const navigate = useNavigate();
+  const location = useLocation(); 
   const user = useSelector((state) => state.auth.user);
-  const [anchorEl, setAnchorEl] = useState(null); // Состояние для открытия меню
+  const [anchorEl, setAnchorEl] = useState(null); 
 
   // Открытие меню
   const handleClick = (event) => {
@@ -25,14 +25,14 @@ const Header = () => {
   // Обработчик выхода
   const handleLogout = () => {
     dispatch(logout());
-    handleClose(); // Закрываем меню после выхода
+    handleClose(); 
 
-    // Проверяем, находимся ли мы на одной из страниц, с которых можно навигировать на главную
+    
     const validUrls = ['/cart', '/add-advertisement', '/my-advertisement'];
     if (validUrls.includes(location.pathname)) {
-      navigate('/'); // Перенаправляем на главную страницу
+      navigate('/'); 
     } else {
-      navigate(location.pathname); // Оставляем на текущей странице
+      navigate(location.pathname); 
     }
   };
 

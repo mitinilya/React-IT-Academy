@@ -26,10 +26,10 @@ const MyAdvertisementPage = () => {
   };
 
   const handleDeleteAd = (carId) => {
-    setIsRemoving(carId); // Помечаем, что это объявление удаляется
+    setIsRemoving(carId); // делаем замечание что удаляется обновление
     setTimeout(() => {
       dispatch(deleteCar(carId));
-    }, 500); // Ожидаем завершения анимации
+    }, 500); // Ожидаем завершения анимации и уже удаляем карточку
   };
 
   // Фильтруем автомобили по userId
