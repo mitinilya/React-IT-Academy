@@ -15,7 +15,7 @@ const carsReducer = (state = initialState, action) => {
     case 'FETCH_LOGGED_IN_USER_FAILURE':
       return { ...state, loading: false, error: action.payload };
 
-    // Загрузка списка автомобилей
+    // загрузка списка автомобилей
     case 'FETCH_CARS_REQUEST':
       return { ...state, loading: true };
     case 'FETCH_CARS_SUCCESS':
@@ -31,7 +31,7 @@ const carsReducer = (state = initialState, action) => {
       };
     case 'ADD_ADVERTISEMENT':
       return { ...state, cars: [...state.cars, action.payload] };
-    // Обновление автомобиля
+    // обновляем авто
     case 'UPDATE_CAR_SUCCESS':
       return {
         ...state,

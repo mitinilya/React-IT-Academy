@@ -68,7 +68,7 @@ const EditAdvertisementPage = () => {
     });
 
     if (value) {
-      setErrors((prev) => ({ ...prev, [name]: false })); // Убираем ошибку, если поле заполнено корректно
+      setErrors((prev) => ({ ...prev, [name]: false })); 
     }
   };
 
@@ -83,12 +83,12 @@ const EditAdvertisementPage = () => {
       return;
     }
 
-    dispatch(updateCar(id, localCarData)); // Обновление данных
-    setSuccessMessage('Объявление успешно обновлено!'); // Уведомление об успехе
+    dispatch(updateCar(id, localCarData)); 
+    setSuccessMessage('Объявление успешно обновлено!');
     setOpenSnackbar(true); // Открытие Snackbar с успехом
     setTimeout(() => {
-      navigate('/my-advertisement'); // Перенаправление после успешного обновления
-    }, 2000); // Задержка перед переходом
+      navigate('/my-advertisement'); 
+    }, 2000); // Задержка перед переходом для анимки
   };
 
   const handleCloseSnackbar = () => {

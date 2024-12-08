@@ -7,7 +7,7 @@ export const fetchUserCart = (userId) => async (dispatch) => {
     // Проверяем, что корзина существует и передаем в Redux
     dispatch({
       type: 'FETCH_USER_CART',
-      payload: user.cart || [],  // Если корзина не существует, передаем пустой массив
+      payload: user.cart || [],  // если нет корзины - то пустой массив передать
     });
   } catch (error) {
     console.error('Error fetching user cart:', error.message);
@@ -49,7 +49,7 @@ export const addToCart = (car) => async (dispatch, getState) => {
       throw new Error('User not found');
     }
 
-    // Проверяем, не добавлен ли уже этот товар в корзину
+    // Проверяем не добавлен ли уже этот товар вкорзину
     if (currentUser.cart.find(item => item.id === car.id)) {
       throw new Error('Item already in cart');
     }
@@ -69,7 +69,7 @@ export const addToCart = (car) => async (dispatch, getState) => {
       throw new Error('Failed to update cart');
     }
 
-    // Диспатчим успешное обновление корзины
+    // диспатчим   успешное обновление корзины
     dispatch({
       type: 'UPDATE_CART',
       payload: updatedCart,

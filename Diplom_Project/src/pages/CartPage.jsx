@@ -8,16 +8,16 @@ const CartPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { user } = useSelector(state => state.auth);
-  const { items } = useSelector(state => state.cart); // Получаем корзину из Redux
+  const { items } = useSelector(state => state.cart); 
 
-  // Состояние для управления анимацией
+  
   const [isRemoving, setIsRemoving] = useState(null);
 
   const handleRemoveFromCart = (carId) => {
-    setIsRemoving(carId);  // Сначала помечаем товар как "удаляемый"
+    setIsRemoving(carId); 
     setTimeout(() => {
-      dispatch(removeFromCart(carId)); // Диспатчим экшен для удаления товара
-    }, 500);  // Ожидаем завершения анимации перед удалением из Redux
+      dispatch(removeFromCart(carId)); // диспатчим action для удаления товара
+    }, 500);  //анимация при удалении с задержкой
   };
 
   return (

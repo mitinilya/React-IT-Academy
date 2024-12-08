@@ -41,7 +41,7 @@ const CarListPage = () => {
       maxPrice: queryParams.get('maxPrice') || '',
       engineType: queryParams.get('engineType') || '',
       sortOrder: queryParams.get('sortOrder') || '',
-      itemsPerPage: queryParams.get('itemsPerPage') || 50, // itemsPerPage в урл 
+      itemsPerPage: queryParams.get('itemsPerPage') || 50, // itemsPerPage в урл !!
       page: queryParams.get('page') || 1, // page в урл
     };
 

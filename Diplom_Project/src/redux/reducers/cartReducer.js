@@ -1,15 +1,15 @@
 const initialState = {
-  items: [], // Начальное значение корзины должно быть массивом
+  items: [], // начальное значение корзины - массив
 };
 
 const cartReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'FETCH_USER_CART':
-      return { ...state, items: action.payload };  // Загружаем корзину пользователя
+      return { ...state, items: action.payload };  
     case 'ADD_TO_CART':
       return { ...state, items: [...state.items, action.payload] };
     case 'REMOVE_FROM_CART':
-      return { ...state, items: action.payload };  // Здесь обновляется корзина после удаления
+      return { ...state, items: action.payload };  // обновление крзины после удаления
     default:
       return state;
   }

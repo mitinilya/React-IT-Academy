@@ -26,9 +26,9 @@ const AddAdvertisementPage = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [isFormChanged, setIsFormChanged] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);  // Состояние для отслеживания успеха
+  const [isSuccess, setIsSuccess] = useState(false);  
 
-  // Функция для централизованной валидации
+ 
   const validateFormData = () => {
     const validationErrors = {};
     const currentYear = new Date().getFullYear();
@@ -50,14 +50,14 @@ const AddAdvertisementPage = () => {
     const { name, value } = e.target;
 
     if (name === 'price' || name === 'mileage' || name === 'year') {
-      if (!/^\d*$/.test(value)) return; // Только цифры
-      if (value < 0) return; // Запрещаем отрицательные значения
+      if (!/^\d*$/.test(value)) return;
+      if (value < 0) return; 
     }
 
     if (name === 'year') {
       const currentYear = new Date().getFullYear();
       if (value && (parseInt(value) > currentYear || value.length > 4)) {
-        return; // Запрещаем некорректный год
+        return; 
       }
     }
 
@@ -88,7 +88,7 @@ const AddAdvertisementPage = () => {
 
     setSuccessMessage('Объявление успешно добавлено!');
     setOpenSnackbar(true);
-    setIsSuccess(true);  // Устанавливаем успех в состояние
+    setIsSuccess(true);  
   };
 
   const handleCloseSnackbar = () => {
@@ -96,13 +96,13 @@ const AddAdvertisementPage = () => {
   };
 
   useEffect(() => {
-    // Таймаут для перехода после успешного добавления
+    
     if (isSuccess) {
       const timer = setTimeout(() => {
-        navigate('/my-advertisement'); // Переход на другую страницу через 3 секунды
-      }, 1000);  // Таймаут в 3 секунды
+        navigate('/my-advertisement'); 
+      }, 1000);  
 
-      return () => clearTimeout(timer); // Очистка таймаута при размонтировании компонента
+      return () => clearTimeout(timer); //при размонтировании компонента чистим timeout
     }
   }, [isSuccess, navigate]);
 
