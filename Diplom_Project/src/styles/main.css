@@ -40,30 +40,60 @@ body {
   }
   
   .car-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 16px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 350px; /* Увеличиваем минимальную высоту карточки для размещения футера */
   }
   
   .car-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
+	max-width: 100%;
+	height: auto;
+	border-radius: 4px;
   }
   
   .car-card button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
   }
   
   .car-card button:hover {
-    background-color: #0056b3;
+	background-color: #0056b3;
   }
+  
+  .car-card-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 100%;
+	max-width: 250px;
+	margin-top: auto; /* Отталкивает футер вниз, не выходя за пределы карточки */
+  }
+  
+  .action-button {
+	width: 100%;
+	max-width: 250px;
+  }
+  
+  .car-card-p {
+	text-align: center;
+	font-size: 14px;
+	color: #888;
+	margin-top: 0;
+  }
+  
+  
+  
   
   .cart {
     padding: 20px;
@@ -635,95 +665,102 @@ body {
 	color: #333;
   }
   
-  /* заголовок корзины */
-  .cart h1 {
-	font-size: 2.5rem;
-	font-weight: bold;
-	color: #2c3e50;
-	text-align: center;
-	margin-bottom: 40px;
+  .cart {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* элементы корзины в (карточки товаров) */
+  h1 {
+	text-align: center;
+	color: #333;
+	font-size: 32px;
+	margin-bottom: 20px;
+  }
+  
   .cart-item {
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
 	padding: 20px;
-	margin-bottom: 20px;
-	background-color: #f4f6f9;
+	margin: 15px 0;
 	border-radius: 8px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	width: 100%;
-	max-width: 350px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-
-  .cart-item:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* изображение товара */
-  .cart-item img {
-	width: 100%;
-	height: auto;
-	border-radius: 8px;
-	margin-bottom: 15px;
+  .cart-item-image {
+	width: 120px;
+	height: 120px;
 	object-fit: cover;
+	border-radius: 8px;
   }
   
-  /* информация о товаре */
-  .cart-item h3 {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: #34495e;
-	margin: 0;
+  .cart-item-details {
+	flex: 1;
+	margin-left: 20px;
+  }
+  
+  .cart-item-details h3 {
+	font-size: 24px;
+	color: #333;
 	margin-bottom: 10px;
   }
   
-  .cart-item p {
-	font-size: 1rem;
-	color: #7f8c8d;
+  .cart-item-details p {
+	font-size: 16px;
+	color: #555;
 	margin: 5px 0;
   }
   
-  /* цена товара */
-  .cart-item .price {
-	font-size: 1.2rem;
-	font-weight: bold;
-	color: #e74c3c;
-	margin-top: 10px;
+  .cart-item-details strong {
+	font-weight: 600;
   }
   
-  /* кнопка удаления товара */
-  .cart-item button {
-	padding: 10px 20px;
+  .remove-btn {
 	background-color: #e74c3c;
-	color: white;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 14px;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-	font-size: 1rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	margin-top: 15px;
 	transition: background-color 0.3s ease;
   }
   
-  .cart-item button:hover {
+  .remove-btn:hover {
 	background-color: #c0392b;
   }
   
-  /* сообщение о пустой корзине */
-  .cart p {
-	font-size: 1.2rem;
+  .empty-cart {
 	text-align: center;
-	color: #bdc3c7;
-	font-style: italic;
-	margin-top: 50px;
+	font-size: 18px;
+	color: #888;
   }
+  
+  @media (max-width: 768px) {
+	.cart {
+	  width: 95%;
+	}
+  
+	.cart-item {
+	  flex-direction: column;
+	  align-items: flex-start;
+	}
+  
+	.cart-item-image {
+	  width: 100%;
+	  height: auto;
+	}
+  
+	.cart-item-details {
+	  margin-left: 0;
+	}
+  }
+  
 /* общие стили для страницы */
 .car-list-page {
 	display: flex;
@@ -788,22 +825,236 @@ body {
 	margin-bottom: 10px;
   }
   
-  /* Стили для пагинации */
   .pagination {
 	display: flex;
-	justify-content: center;
-	margin-top: 20px;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
   }
   
-  .pagination button {
-	padding: 8px 16px;
-	margin: 0 5px;
-	border: 1px solid #ddd;
+  .pagination-controls {
+	display: flex;
+	align-items: center;
+  }
+  
+  .pagination-button {
+	padding: 8px 12px;
+	margin: 0 10px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 4px;
 	cursor: pointer;
-	border-radius: 5px;
   }
   
-  .pagination button:hover {
-	background-color: #f1f1f1;
+  .pagination-button:disabled {
+	background-color: #ddd;
+	cursor: not-allowed;
+  }
+  
+  .page-numbers {
+	display: flex;
+	align-items: center;
+  }
+  
+  .page-button {
+	margin: 0 5px;
+	padding: 8px 12px;
+	background-color: #f0f0f0;
+	color: #333;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .page-button:hover {
+	background-color: #007bff;
+	color: white;
+  }
+  
+  .page-button.active {
+	background-color: #007bff;
+	color: white;
+  }
+  
+  .items-per-page-selector {
+	display: flex;
+	align-items: center;
+  }
+  
+  .items-per-page-selector label {
+	font-size: 14px;
+	margin-left: 10px;
+  }
+  
+  .items-per-page-selector select {
+	padding: 5px;
+	font-size: 14px;
+	margin-left: 5px;
+  }
+  
+  /* Стили для страницы добавления объявления */
+.advertisement-form {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background-color: #fff;
+  }
+  
+  .advertisement-form h1 {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #333;
+  }
+  
+  .advertisement-form label {
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 6px;
+  }
+  
+  .advertisement-form input,
+  .advertisement-form select,
+  .advertisement-form textarea {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+	width: 100%;
+  }
+  
+  .advertisement-form input[type="number"] {
+	width: 100%;
+  }
+  
+  .advertisement-form textarea {
+	height: 120px;
+	resize: vertical;
+  }
+  
+  .advertisement-form button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 12px 20px;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	width: 100%;
+  }
+  
+  .advertisement-form button:hover {
+	background-color: #0056b3;
+  }
+  
+  .advertisement-form button:active {
+	background-color: #004080;
+  }
+  
+  .advertisement-form select {
+	cursor: pointer;
+  }
+  
+  .advertisement-form input:focus,
+  .advertisement-form select:focus,
+  .advertisement-form textarea:focus {
+	outline: none;
+	border-color: #007bff;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Стили для поля загрузки изображения */
+  .advertisement-form input[name="image"] {
+	padding: 10px;
+	font-size: 14px;
+  }
+  
+  /* Стиль для кнопки отправки формы */
+  .advertisement-form button {
+	width: 100%;
+	background-color: #28a745;
+  }
+  
+  .advertisement-form button:hover {
+	background-color: #218838;
+  }
+  .ad-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Сетка с адаптивным количеством колонок */
+	gap: 20px;
+	padding: 20px;
+  }
+  
+  .ad-card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 16px;
+	text-align: center;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;  /* Вертикальное выравнивание содержимого */
+	justify-content: flex-start;  /* Контент будет выравниваться сверху */
+	height: 100%;  /* Карточка будет растягиваться по высоте */
+  }
+  
+  .ad-card img {
+	width: 100%; /* Картинка будет растягиваться по ширине карточки */
+	max-width: 100%; /* Максимальная ширина картинки */
+	height: auto; /* Высота автоматически в зависимости от пропорций */
+	object-fit: contain; /* Картинка сохраняет свои пропорции */
+	border-radius: 4px;
+	margin: 0 auto;
+  }
+  
+  .ad-card h3 {
+	font-size: 1.2rem;
+	margin: 10px 0;
+  }
+  
+  .ad-card p {
+	font-size: 1rem;
+	margin-bottom: 10px;
+  }
+  
+  .ad-card .button-container {
+	margin-top: auto; /* Кнопки всегда внизу карточки */
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+  }
+  
+  .ad-card button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: background-color 0.3s ease;
+  }
+  
+  .ad-card button:hover {
+	background-color: #0056b3;
+  }
+  
+  .ad-card button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+  }
+  
+  .page-title {
+	font-size: 2rem;
+	margin-bottom: 30px;
+	text-align: center;
   }
   

@@ -1,38 +1,73 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { Button, Snackbar } from '@mui/material';
 
+
 const CarCard = ({ car, onAddToCart }) => {
-  const user = useSelector((state) => state.auth.user); 
-  const [openSnackbar, setOpenSnackbar] = React.useState(false);
+  const dispatch = useDispatch();
+  const user = useSelector((state) => state.auth.user);
+  const cartItems = useSelector((state) => state.cart.items);
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [isAddedToCart, setIsAddedToCart] = useState(false);
+
+  const isInCart = cartItems.some(item => item.id === car.id);
+
+  useEffect(() => {
+    setIsAddedToCart(isInCart);
+  }, [cartItems]);
 
   const handleAddToCart = () => {
-    if (user) {
-      onAddToCart(user.id, car); 
-      setOpenSnackbar(true); 
+    if (user && !isInCart) {
+      onAddToCart(car);
+      dispatch({ type: 'ADD_TO_CART', payload: car });
+      setIsAddedToCart(true);
+      setOpenSnackbar(true);
     }
   };
 
   const handleCloseSnackbar = () => {
-    setOpenSnackbar(false); // закрыть увед
+    setOpenSnackbar(false);
   };
+
+  // Плейсхолдер изображения
+  const placeholderImage = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMwMDAwMDAiLz4KPC9zdmc+Cg==';
 
   return (
     <div className="car-card">
-      <img src={car.image} alt={car.model} width={200} />
-      <h3>{car.brand} {car.model}</h3>
-      <p>Год выпуска: {car.year || 'Не указан'}</p>
-      <p>Стоимость: ${car.price ? car.price.toLocaleString() : 'Не указано'}</p>
-      <p>Тип двигателя: {car.type || 'Не указано'}</p>
-      <p>Пробег: {car.mileage ? `${car.mileage.toLocaleString()} км` : 'Не указано'}</p>
-      <p>{car.description || ''}</p>
-      {user ? (
-        <Button variant="contained" color="primary" onClick={handleAddToCart}>
-          Добавить в избранное
-        </Button>
-      ) : (
-        <p className= "car-card-p">Войдите в аккаунт, чтобы добавить в избранное</p>
-      )}
+      <div className="car-card-image">
+        {/* lazy loading для картинок */}
+        <img 
+          src={car.image || placeholderImage} 
+          alt={car.model} 
+          loading="lazy"
+          onError={(e) => e.target.src = placeholderImage} 
+        />
+      </div>
+      <div className="car-card-content">
+        <h3>{car.brand} {car.model}</h3>
+        <p>Год выпуска: {car.year || 'Не указан'}</p>
+        <p>Стоимость: ${car.price ? car.price.toLocaleString() : 'Не указано'}</p>
+        <p>Тип двигателя: {car.type || 'Не указано'}</p>
+        <p>Пробег: {car.mileage ? `${car.mileage.toLocaleString()} км` : 'Не указано'}</p>
+        <p>{car.description || ''}</p>
+
+        <div className="car-card-footer">
+          {user ? (
+            <Button 
+              variant="contained" 
+              color="primary" 
+              onClick={handleAddToCart} 
+              disabled={isAddedToCart || isInCart}
+              className="action-button"
+            >
+              {isAddedToCart || isInCart ? 'Добавлено в избранное' : 'Добавить в избранное'}
+            </Button>
+          ) : (
+            <p className="car-card-p">Необходимо авторизоваться, чтобы добавить в избранное</p>
+          )}
+</div>
+
+      </div>
 
       <Snackbar
         open={openSnackbar}

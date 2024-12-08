@@ -1,19 +1,19 @@
-// добавление в избранное
-// cartActions.js
+// Экшен для загрузки корзины пользователя
 export const fetchUserCart = (userId) => async (dispatch) => {
   try {
     const response = await fetch(`http://localhost:5000/users/${userId}`);
     const user = await response.json();
 
-    // Загрузим корзину для этого пользователя
+    // Проверяем, что корзина существует и передаем в Redux
     dispatch({
       type: 'FETCH_USER_CART',
-      payload: user.cart || [],  // Загружаем корзину этого пользователя
+      payload: user.cart || [],  // Если корзина не существует, передаем пустой массив
     });
   } catch (error) {
     console.error('Error fetching user cart:', error.message);
   }
 };
+
 
 
 export const saveCartForUser = (cartItems) => async (dispatch, getState) => {
@@ -33,12 +33,9 @@ export const saveCartForUser = (cartItems) => async (dispatch, getState) => {
   }
 };
 
-// Добавление товара в корзину для конкретного пользователя
 export const addToCart = (car) => async (dispatch, getState) => {
   try {
-    // Получаем информацию о текущем пользователе из loggedInUser
-    const { user } = getState().auth;  // текущий авторизованный пользователь
-
+    const { user } = getState().auth;
     if (!user) {
       throw new Error('User not logged in');
     }
@@ -47,17 +44,19 @@ export const addToCart = (car) => async (dispatch, getState) => {
     const response = await fetch('http://localhost:5000/users');
     const users = await response.json();
 
-    // Находим пользователя, корзину которого будем обновлять
     const currentUser = users.find((u) => u.id === user.id);
-
     if (!currentUser) {
       throw new Error('User not found');
     }
 
-    // Добавляем новый товар в корзину пользователя
+    // Проверяем, не добавлен ли уже этот товар в корзину
+    if (currentUser.cart.find(item => item.id === car.id)) {
+      throw new Error('Item already in cart');
+    }
+
+    // Добавляем товар в корзину
     const updatedCart = [...currentUser.cart, car];
 
-    // Отправляем запрос на обновление корзины этого пользователя
     const updateResponse = await fetch(`http://localhost:5000/users/${user.id}`, {
       method: 'PATCH',
       headers: {
@@ -82,20 +81,51 @@ export const addToCart = (car) => async (dispatch, getState) => {
 
 
 
+// cartActions.js
 
-// Удаление из корзины
-export const removeFromCart = (carId) => async (dispatch) => {
+export const removeFromCart = (carId) => async (dispatch, getState) => {
   try {
-    const response = await fetch(`http://localhost:5000/cart/${carId}`, {
-      method: 'DELETE',
+    const { user } = getState().auth; // Получаем текущего пользователя
+    if (!user) {
+      throw new Error('User not logged in');
+    }
+
+    // Получаем текущую корзину пользователя из состояния
+    const cart = getState().cart.items; // Состояние корзины из Redux
+
+    // Проверяем, что корзина существует и является массивом
+    if (!Array.isArray(cart)) {
+      throw new Error('Cart is not an array');
+    }
+
+    // Фильтруем товар, который нужно удалить
+    const updatedCart = cart.filter((item) => item.id !== carId);
+
+    // Если товар не найден, выходим
+    if (updatedCart.length === cart.length) {
+      console.log('Item not found in cart');
+      return;
+    }
+
+    // Отправляем обновленную корзину на сервер
+    const response = await fetch(`http://localhost:5000/users/${user.id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ cart: updatedCart }),
     });
 
-    const updatedCart = await response.json();
+    if (!response.ok) {
+      throw new Error('Failed to update cart');
+    }
+
+    // Диспатчим обновленную корзину в Redux
     dispatch({
       type: 'REMOVE_FROM_CART',
       payload: updatedCart,
     });
   } catch (error) {
-    console.error('Error removing from cart:', error);
+    console.error('Error removing from cart:', error.message);
   }
 };

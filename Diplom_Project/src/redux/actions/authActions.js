@@ -1,16 +1,16 @@
-// authActions.js
 import { fetchUserCart } from './cartActions';  
-// authActions.js
+
+
 export const logout = () => async (dispatch, getState) => {
   try {
-    // Получаем текущего авторизованного пользователя из состояния
+    //получаем текущего польза
     const userId = getState().auth.user?.id;
 
     if (!userId) {
       throw new Error('No user is logged in');
     }
 
-    // Удаляем loggedInUser с id текущего пользователя
+    //Удаляем loggedInUser с id текущего пользователя
     const response = await fetch(`http://localhost:5000/loggedInUser/${userId}`, {
       method: 'DELETE',
     });
@@ -28,7 +28,7 @@ export const logout = () => async (dispatch, getState) => {
 
 
 
-// authActions.js
+
 export const checkAuth = () => async (dispatch) => {
   try {
     const response = await fetch('http://localhost:5000/loggedInUser');
@@ -38,7 +38,6 @@ export const checkAuth = () => async (dispatch) => {
       const user = loggedInUser[0];
       dispatch({ type: 'LOGIN_SUCCESS', payload: user });
 
-      // Загружаем корзину для текущего пользователя
       dispatch(fetchUserCart(user.id));
     } else {
       dispatch({ type: 'LOGOUT' });
@@ -58,7 +57,6 @@ export const login = (username, password) => async (dispatch) => {
     );
 
     if (user) {
-      // Сохраняем пользователя в loggedInUser
       await fetch('http://localhost:5000/loggedInUser', {
         method: 'POST', 
         headers: {
@@ -69,7 +67,6 @@ export const login = (username, password) => async (dispatch) => {
 
       dispatch({ type: 'LOGIN_SUCCESS', payload: user });
 
-      // Загружаем корзину текущего пользователя
       dispatch(fetchUserCart(user.id));
     } else {
       throw new Error('Invalid credentials');

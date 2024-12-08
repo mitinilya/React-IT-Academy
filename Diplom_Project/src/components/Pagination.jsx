@@ -11,21 +11,38 @@ const Pagination = ({ totalItems, itemsPerPage, currentPage, onPageChange, onIte
     onItemsPerPageChange(Number(e.target.value));
   };
 
+  const pageNumbers = [];
+  for (let i = 1; i <= totalPages; i++) {
+    pageNumbers.push(i);
+  }
+
   return (
     <div className="pagination">
       <div className="pagination-controls">
         <button
           disabled={currentPage === 1}
           onClick={() => handlePageClick(currentPage - 1)}
+          className="pagination-button"
         >
           Предыдущая
         </button>
-        <span>
-          Страница {currentPage} из {totalPages}
-        </span>
+
+        <div className="page-numbers">
+          {pageNumbers.map((pageNumber) => (
+            <button
+              key={pageNumber}
+              onClick={() => handlePageClick(pageNumber)}
+              className={`page-button ${currentPage === pageNumber ? 'active' : ''}`}
+            >
+              {pageNumber}
+            </button>
+          ))}
+        </div>
+
         <button
           disabled={currentPage === totalPages}
           onClick={() => handlePageClick(currentPage + 1)}
+          className="pagination-button"
         >
           Следующая
         </button>
@@ -35,6 +52,7 @@ const Pagination = ({ totalItems, itemsPerPage, currentPage, onPageChange, onIte
         <label>
           Показывать по:
           <select value={itemsPerPage} onChange={handleItemsPerPageChange}>
+            <option value={10}>10</option>
             <option value={25}>25</option>
             <option value={50}>50</option>
             <option value={100}>100</option>

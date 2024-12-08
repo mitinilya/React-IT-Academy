@@ -1651,7 +1651,6 @@
       "image": "/images/150.png"
     }
   ],
-  "cart": [],
   "users": [
     {
       "id": "1",
@@ -1663,27 +1662,8 @@
       "id": "2",
       "username": "user2",
       "password": "password2",
-      "cart": [
-        {
-          "id": "5",
-          "brand": "Nissan",
-          "model": "Altima",
-          "year": 2021,
-          "price": 22000,
-          "type": "petrol",
-          "mileage": 30,
-          "description": "A stylish sedan with advanced safety features and a spacious interior.",
-          "image": "/images/5.png"
-        }
-      ]
-    }
-  ],
-  "loggedInUser": [
-    {
-      "id": "1",
-      "username": "user1",
-      "password": "password1",
       "cart": []
     }
-  ]
+  ],
+  "loggedInUser": []
 }

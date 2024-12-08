@@ -1,3 +1,5 @@
+// src/pages/LoginPage.jsx
+
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -8,11 +10,10 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const error = useSelector((state) => state.auth.error);  // Получаем ошибку из state
   const user = useSelector((state) => state.auth.user);
 
   useEffect(() => {
-    // Если пользователь уже авторизован, перенаправляем его
     if (user) {
       navigate('/');
     }
@@ -20,32 +21,34 @@ const LoginPage = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    try {
-      await dispatch(login(username, password));
-    } catch (err) {
-      setError('Invalid username or password');
-    }
+    dispatch(login(username, password));  // вызываем action login
   };
 
   return (
     <div className="login-page">
       <div className="login-form-container">
-        <h1>Login</h1>
-        {error && <p style={{ color: 'red' }}>{error}</p>}
+        <h1>Вход в систему</h1>
+        {error && <p style={{ color: 'red' }}>{error}</p>}  {/* Отображаем ошибку */}
         <form onSubmit={handleLogin}>
           <label>
-            Username:
+            Логин: 
             <input
-              type="text" value={username} onChange={(e) => setUsername(e.target.value)} required
+              type="text" 
+              value={username} 
+              onChange={(e) => setUsername(e.target.value)} 
+              required
             />
           </label>
           <label>
-            Password:
+            Пароль: 
             <input
-              type="password" value={password} onChange={(e) => setPassword(e.target.value)} required
+              type="password" 
+              value={password} 
+              onChange={(e) => setPassword(e.target.value)} 
+              required
             />
           </label>
-          <button type="submit">Login</button>
+          <button type="submit">Войти</button>
         </form>
       </div>
     </div>

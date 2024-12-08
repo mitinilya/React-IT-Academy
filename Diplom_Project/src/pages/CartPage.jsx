@@ -1,84 +1,52 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, removeFromCart } from '../redux/actions/cartActions';
+import { removeFromCart } from '../redux/actions/cartActions';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const CartPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { user } = useSelector(state => state.auth);
-  const [userCart, setUserCart] = useState([]);
+  const { items } = useSelector(state => state.cart); // Получаем корзину из Redux
 
-  
-  const fetchUserCart = async () => {
-    if (user) {
-      try {
-        
-        const response = await fetch(`http://localhost:5000/users/${user.id}`);
-        const data = await response.json();
+  // Состояние для управления анимацией
+  const [isRemoving, setIsRemoving] = useState(null);
 
-        if (data && data.cart) {
-          setUserCart(data.cart);  
-        } else {
-          setUserCart([]);  
-        }
-      } catch (error) {
-        console.error("Error fetching user's cart:", error);
-      }
-    }
+  const handleRemoveFromCart = (carId) => {
+    setIsRemoving(carId);  // Сначала помечаем товар как "удаляемый"
+    setTimeout(() => {
+      dispatch(removeFromCart(carId)); // Диспатчим экшен для удаления товара
+    }, 500);  // Ожидаем завершения анимации перед удалением из Redux
   };
-
-  useEffect(() => {
-    if (user) {
-      fetchUserCart();
-    }
-  }, [user]);
-
-  
-  const handleRemoveFromCart = async (carId) => {
-    try {
-     
-      const response = await fetch(`http://localhost:5000/users/${user.id}`, {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          cart: userCart.filter(item => item.id !== carId),
-        }),
-      });
-      if (response.ok) {
-        
-        setUserCart(userCart.filter(item => item.id !== carId));
-      } else {
-        console.error('Failed to remove item from cart');
-      }
-    } catch (error) {
-      console.error('Error removing item from cart:', error);
-    }
-  };
-
-
-
-
-
 
   return (
     <div className="cart">
-      <h1>Корзина</h1>
-      {userCart.length > 0 ? (
-        userCart.map((car) => (
-          <div key={car.id} className="cart-item">
-            <img src={car.image} alt={car.model} width={100} />
-            <h3>{car.brand} {car.model}</h3>
-            <p>Год выпуска: {car.year}</p>
-            <p>Стоимость: ${car.price}</p>
-            <p>Описание: {car.description}</p>
-            <button onClick={() => handleRemoveFromCart(car.id)}>Удалить из корзины</button>
-          </div>
+      <h1>Избранное</h1>
+      {items.length > 0 ? (
+        items.map((car) => (
+          <motion.div
+            key={car.id}
+            className="cart-item"
+            initial={{ opacity: 1 }}
+            animate={{ opacity: isRemoving === car.id ? 0 : 1 }} // Применяем анимацию
+            exit={{ opacity: 0 }} // При удалении элемент будет исчезать
+            transition={{ duration: 0.5 }} // Время анимации
+          >
+            <img src={car.image} alt={car.model} className="cart-item-image" />
+            <div className="cart-item-details">
+              <h3>{car.brand} {car.model}</h3>
+              <p><strong>Год выпуска:</strong> {car.year}</p>
+              <p><strong>Стоимость:</strong> ${car.price}</p>
+              <p><strong>Описание:</strong> {car.description}</p>
+              <button className="remove-btn" onClick={() => handleRemoveFromCart(car.id)}>
+                Удалить из корзины
+              </button>
+            </div>
+          </motion.div>
         ))
       ) : (
-        <p>Ваша корзина пуста.</p>
+        <p className="empty-cart">Ваша корзина пуста.</p>
       )}
     </div>
   );

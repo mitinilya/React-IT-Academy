@@ -25,18 +25,18 @@ const FilterBar = ({ filters, onFilterChange, onApplyFilters }) => {
         </select>
       </label>
       <label>
-        Сортировать по ценам:
+        Сортировать по:
         <select
           value={filters.sortOrder}
           onChange={handleSortOrderChange}
         >
-          <option value="">Выберите тут</option>
+          <option value="">Без сортировки</option>
           <option value="asc">По возрастанию</option>
           <option value="desc">По убыванию</option>
         </select>
       </label>
 
-     
+     <span>Укажите диапазон стоимости: </span>
       <TextField
         label="Минимум по цене"
         value={filters.minPrice || ''}

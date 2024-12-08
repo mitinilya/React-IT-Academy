@@ -83,6 +83,7 @@ const CarListPage = () => {
     if (itemsPerPage) queryParams.set('itemsPerPage', itemsPerPage); // добавить itemsPerPage в урл!!!!
     if (currentPage) queryParams.set('page', currentPage); // добавляем page в URL
     
+    queryParams.set('page', 1); //сбросить номер стр при добавлении фильтров
 
     navigate(`?${queryParams.toString()}`);
   };
@@ -118,21 +119,21 @@ const CarListPage = () => {
   const currentCars = filteredCars.slice(indexOfFirstItem, indexOfLastItem);
 
   if (loading) return <div className="cssload-loader">
-  <div className="cssload-line"></div>
-  <div className="cssload-line"></div>
-  <div className="cssload-line"></div>
-  <div className="cssload-line"></div>
-  <div className="cssload-line"></div>
-  <div className="cssload-line"></div>
-  <div className="cssload-subline"></div>
-  <div className="cssload-subline"></div>
-  <div className="cssload-subline"></div>
-  <div className="cssload-subline"></div>
-  <div className="cssload-subline"></div>
-  <div className="cssload-loader-circle-1"><div className="cssload-loader-circle-2"></div></div>
-  <div className="cssload-needle"></div>
-  <div className="cssload-loading">Загрузка...</div>
-</div>
+    <div className="cssload-line"></div>
+    <div className="cssload-line"></div>
+    <div className="cssload-line"></div>
+    <div className="cssload-line"></div>
+    <div className="cssload-line"></div>
+    <div className="cssload-line"></div>
+    <div className="cssload-subline"></div>
+    <div className="cssload-subline"></div>
+    <div className="cssload-subline"></div>
+    <div className="cssload-subline"></div>
+    <div className="cssload-subline"></div>
+    <div className="cssload-loader-circle-1"><div className="cssload-loader-circle-2"></div></div>
+    <div className="cssload-needle"></div>
+    <div className="cssload-loading">Загрузка...</div>
+  </div>
   if (error) return <div>Error: {error}</div>;
 
   return (

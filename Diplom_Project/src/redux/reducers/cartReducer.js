@@ -1,6 +1,5 @@
-// cartReducer.js
 const initialState = {
-  items: [],
+  items: [], // Начальное значение корзины должно быть массивом
 };
 
 const cartReducer = (state = initialState, action) => {
@@ -10,7 +9,7 @@ const cartReducer = (state = initialState, action) => {
     case 'ADD_TO_CART':
       return { ...state, items: [...state.items, action.payload] };
     case 'REMOVE_FROM_CART':
-      return { ...state, items: state.items.filter(item => item.id !== action.payload) };
+      return { ...state, items: action.payload };  // Здесь обновляется корзина после удаления
     default:
       return state;
   }
